@@ -3,7 +3,6 @@
       
     <div class="footer">
         <footer>
-            <h5> Naturkollen </h5>
             <p> Copyright © Jesper Truedsson </p>
         </footer>
     </div>
@@ -19,10 +18,14 @@ export default {
 
 <style>
 .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    font-size: 15px;
+  height: 3rem;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #649651 !important;
+  color: #fff;
 }
+p { margin: 0px; padding: 0px;}
 </style>
