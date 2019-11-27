@@ -2,7 +2,10 @@ import Vue from 'vue'
 import Router from "vue-router"
 
 import Home from '../containers/Home'
+import About from '../containers/About'
+import Contact from '../containers/Contact'
 import Trees from '../containers/Trees'
+import Animals from '../containers/Animals'
 
 Vue.use(Router)
 
@@ -16,10 +19,26 @@ export default new Router({
 			component: Home
 		},
 		{
+			path: "/about",
+			name: "About",
+			component: About
+		},
+		{
+			path: "/contact",
+			name: "Contact",
+			component: Contact
+		},
+		{
 			path: "/trees",
 			name: "Trees",
 			component: Trees
 		},
+		{
+			path: "/animals",
+			name: "Animals",
+			component: Animals
+		},
+		
 		/* {
 			path: "/dashboard",
 			name: "Dashboard",

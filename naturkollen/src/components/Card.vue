@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem; box-shadow: 1px 1px 10px #222;">
         <img src="https://loremflickr.com/400/400" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">Card title</h5>

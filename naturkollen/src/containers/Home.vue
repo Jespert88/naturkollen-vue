@@ -1,16 +1,21 @@
 <template>
-<div>
+<div class="content">
 
-  <div class="row no-gutters">
-      <div class="col-sm-12 col-md-0 col-xl-0"></div>
-      <div class="col-sm-12 col-md-12 col-xl-12">
-          <h1>Välkommen till naturkollen</h1>
-          <p>Detta är en webbapplikation som är skapad ur ett hobby och träningssyfte.</p>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-1 col-xl-4"></div>
+            <div class="col-sm-12 col-md-10 col-xl-4">
 
-      </div>
-      <div class="col-sm-12 col-md-0 col-xl-0"></div>
-  </div>
-    
+                <div class="welcomeDiv">
+                    <h1>Välkommen till naturkollen</h1>
+                    <p>Detta är en webbapplikation som är skapad ur ett hobby och träningssyfte.</p>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-1 col-xl-4"></div>
+        </div>
+    </div>
+
 </div>
 </template>
 
@@ -21,13 +26,49 @@ export default {
 </script>
 
 <style scoped>
-  h1 {
+/* Desktop */
+.content {
+    background-image: url("../assets/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcomeDiv {
+    margin-top: 40%;
+    border-radius: 10px;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+
+h1 {
     font-size: 40px;
     text-align: center;
     margin-top: 15%;
-  }
-  p {
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+}
+
+p {
     font-size: 18px;
     text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+}
+
+/* Mobile */
+@media (min-width: 360px) and (max-width: 600px) {
+    .welcomeDiv {
+        margin-top: 50%;
+        border-radius: 10px;
+        /* background-color: rgba(0,0,0,0.4); */
     }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcomeDiv {
+        margin-top: 50%;
+        border-radius: 10px;
+        /* background-color: rgba(0,0,0,0.4); */
+    }
+}
 </style>
