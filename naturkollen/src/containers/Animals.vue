@@ -27,7 +27,10 @@ export default {
     name: 'Animals',
     components: {
         Card
-    }
+    },
+
+
+    /* https://via.placeholder.com/600C/O%20https://placeholder.com/#How_To_Set_Image_Size */
 }
 </script>
 
