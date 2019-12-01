@@ -119,10 +119,10 @@ export default {
 #grid {
     margin: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 30px;
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
 }
 
 /* Mobile */

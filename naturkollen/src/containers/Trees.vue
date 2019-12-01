@@ -122,8 +122,10 @@ export default {
 
 <style scoped>
 /* Desktop */
+
+
 #grid {
-    margin: 40px;
+    margin: 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
