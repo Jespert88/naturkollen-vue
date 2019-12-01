@@ -6,8 +6,22 @@
             <div class="col-sm-12 col-md-0 col-xl-3"></div>
             <div class="col-sm-12 col-md-12 col-xl-6">
                 <div class="infoContainer">
-                    <h1>Om naturkollen</h1>
-                    <p> {{info}} </p>
+
+                    <div class="row no-gutters">
+                        <div class="col-sm-12 col-md-6 col-xl-6">
+                            <div style="text-align:center; margin:10%;">
+                                <img src="../assets/logo.png"  class="img-fluid">
+                                <p>Created with Vue.js</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-6">
+                            <div style="padding: 5%;">
+                                <h1>Om naturkollen</h1>
+                                <p> {{info}} </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-sm-12 col-md-0 col-xl-3"></div>
@@ -56,6 +70,7 @@ export default {
 @media (min-width: 360px) and (max-width: 600px) {
     .infoContainer {
         margin-top: 20%;
+        margin-bottom: 10%;
     }
 }
 
