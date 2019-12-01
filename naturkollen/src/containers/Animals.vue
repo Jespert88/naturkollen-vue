@@ -8,6 +8,9 @@
                 <div id="grid">
 
                     <AnimalCard v-for="animal in animalArray" :key="animal.id" :animal="animal" />
+                    <back-to-top text="hej" visibleoffset="500" bottom="30px" right="30px">
+                        <img src="../assets/up-arrow.png" class="img-fluid" id="toTopBtn"/>
+                    </back-to-top>
 
                 </div>
             </div>
@@ -116,6 +119,14 @@ export default {
 
 <style>
 /* Desktop */
+#toTopBtn {
+    height: 40px;
+    widows: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(71, 161, 71);
+}
+
 #grid {
     margin: 5%;
     display: grid;

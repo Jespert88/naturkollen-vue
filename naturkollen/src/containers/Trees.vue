@@ -6,9 +6,12 @@
             <div class="col-sm-1 col-md-1 col-xl-0"></div>
             <div class="col-sm-12 col-md-10 col-xl-12">
                 <div id="grid">
-
                     <!-- <Card v-for="user in userArray" :key="user.id" :user="user" /> -->
                     <Card v-for="tree in treeArray" :key="tree.id" :tree="tree" />
+
+                    <back-to-top text="hej" visibleoffset="500" bottom="30px" right="30px">
+                        <img src="../assets/up-arrow.png" class="img-fluid" id="toTopBtn"/>
+                    </back-to-top>
 
                 </div>
             </div>
@@ -114,15 +117,21 @@ export default {
     },
 
     methods: {
-        
+
     },
 }
-
 </script>
 
 <style scoped>
 /* Desktop */
 
+#toTopBtn {
+    height: 40px;
+    widows: 40px;
+    padding: 5px;
+    border-radius: 50%;
+   background-color: rgb(71, 161, 71);
+}
 
 #grid {
     margin: 5%;
@@ -142,6 +151,15 @@ export default {
         grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 30px;
+    }
+
+    .btn-to-top {
+        width: 20px;
+        height: 20px;
+        padding: 10px 16px;
+        border-radius: 50%;
+        font-size: 22px;
+        line-height: 22px;
     }
 }
 
