@@ -30,13 +30,15 @@ export default {
 .content {
     background-image: url("../assets/wallpaper.jpg");
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
 .welcomeDiv {
     margin-top: 40%;
     border-radius: 10px;
-    /* background-color: rgba(0,0,0,0.4); */
 }
 
 h1 {
@@ -59,7 +61,6 @@ p {
     .welcomeDiv {
         margin-top: 50%;
         border-radius: 10px;
-        /* background-color: rgba(0,0,0,0.4); */
     }
     h1 {
         font-size: 40px;
@@ -82,7 +83,6 @@ p {
     .welcomeDiv {
         margin-top: 50%;
         border-radius: 10px;
-        /* background-color: rgba(0,0,0,0.4); */
     }
 }
 </style>
