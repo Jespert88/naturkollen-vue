@@ -11,7 +11,7 @@
                         <div class="col-sm-12 col-md-6 col-xl-6">
                             <div style="text-align:center; margin:10%;">
                                 <img src="../assets/logo.png"  class="img-fluid">
-                                <p>Created with Vue.js</p>
+                                <p>Skapad med Vue.js</p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-xl-6">
@@ -40,13 +40,9 @@ export default {
         }
     },
     created: function () {
-        this.info = "Lorem Ipsum är en utfyllnadstext från tryck-" +
-            "och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet," +
-            "när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett" +
-            "provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden," +
-            "utan även övergången till elektronisk typografi utan större förändringar." +
-            "Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med" +
-            "avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker."
+        this.info = "Denna applikation är skapad ur ett hobby och lärningsyfte." +
+        " Där grund motivationen till att den existerar var för att lära mig Vue.js samt att samtidigt visa hur en naturapplikation" +
+        "skulle kunna se ut."
     }
 }
 </script>
