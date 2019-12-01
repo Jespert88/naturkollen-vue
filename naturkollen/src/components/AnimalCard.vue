@@ -1,37 +1,36 @@
 <template>
 <div>
-
     <div class="card">
-        <!-- <img v-bind:src="tree.image" v-bind:alt="tree.image" class="img-fluid" /> -->
-        <img :src="tree.image" class="img-fluid" />
-             
+        <img :src="animal.image" class="img-fluid" />
+
         <div class="card-body">
-            <h2 class="card-title" style="text-align:center;"> {{tree.name}}</h2>
-            <button class="btn btn-success" style="width:100%;"  data-toggle="collapse" :data-target="'#collapseExample' + tree.id" aria-expanded="false" aria-controls="collapseExample" v-on:click="toggle">
+            <h2 class="card-title" style="text-align:center;"> {{animal.name}}</h2>
+            <button class="btn btn-success" style="width:100%;" data-toggle="collapse" :data-target="'#collapseExample' + animal.id" aria-expanded="false" aria-controls="collapseExample" v-on:click="toggle">
                 Information
             </button>
 
-            <div class="collapse" :id="'collapseExample' + tree.id">
+            <div class="collapse" :id="'collapseExample' + animal.id">
                 <div class="card-body">
                     <p class="card-text">
-                        {{tree.description}}
-                    </p>
+                        {{animal.description}}
+                    </p><br>
+
+                    <h5 class="card-title">{{animal.kidTitle}}</h5>
+                    <img :src="animal.kidImage" class="img-fluid" />
+                    <p>{{animal.kidDesc}}</p>
+                    
                 </div>
             </div>
         </div>
     </div>
 
-
 </div>
 </template>
-
 <script>
 export default {
-    name: "Card",
+    name: "AnimalCard",
     props: {
-        /* user: {}, */
-        animal: {},
-        tree: {}
+        animal: {}
     },
 
     mounted: function () {
@@ -40,7 +39,7 @@ export default {
 
     methods: {
         toggle: function () {
-            let bodyID = this.tree.id;
+            let bodyID = this.animal.id;
             console.log(bodyID);
         }
     }

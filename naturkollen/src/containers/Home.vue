@@ -40,18 +40,18 @@ export default {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     margin-top: 15%;
     color: #fff;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 15px #000;
 }
 
 p {
     font-size: 18px;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 15px #000;
 }
 
 /* Mobile */
@@ -60,6 +60,20 @@ p {
         margin-top: 50%;
         border-radius: 10px;
         /* background-color: rgba(0,0,0,0.4); */
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 15%;
+        color: #fff;
+        text-shadow: 1px 1px 15px #000;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 15px #000;
     }
 }
 

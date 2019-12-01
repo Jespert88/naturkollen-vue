@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                     <router-link class="nav-link" to="/"> Hem </router-link>
+                    <router-link class="nav-link" to="/"> Hem </router-link>
                 </li>
                 <li class="nav-item active">
                      <router-link class="nav-link" to="/trees"> Trädarter </router-link>
@@ -48,5 +48,9 @@ export default {
 <style>
     #Navbar {
         background-color: #649651 !important;
+    }
+
+    .nav-link:hover {
+        text-shadow: 1px 1px 10px #222;
     }
 </style>
