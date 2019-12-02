@@ -3,13 +3,13 @@
 
     <div class="container-fluid">
         <div class="row no-gutters">
-            <div class="col-sm-1 col-md-1 col-xl-3"></div>
-            <div class="col-sm-12 col-md-10 col-xl-6">
+            <div class="col-sm-1 col-md-1 col-xl-4"></div>
+            <div class="col-sm-12 col-md-10 col-xl-4">
 
                 <div class="formContainer">
-                    <form>
+                    <div v-on:submit.prevent>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="email@here.com">
+                            <input type="email" v-model="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="email@here.com">
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" id="passwordInput" placeholder="Password">
@@ -17,13 +17,14 @@
                         <div class="form-group">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message here"></textarea>
                         </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                        <div class="submitContainer">
+                            <button v-on:click="say" class="btn btn-success" style="width: 150px;"> Skicka </button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-            <div class="col-sm-1 col-md-1 col-xl-3"></div>
+            <div class="col-sm-1 col-md-1 col-xl-4"></div>
         </div>
     </div>
 
@@ -35,11 +36,15 @@ export default {
 
     data() {
         return {
-
+            email: "",
+            message: ""
         }
     },
-    method: {
-
+    methods: {
+        say: function () {
+            this.message = "detta formulär är inte aktivt men tack för du testade formuläret.";
+            alert("Hej " + this.email + " " + this.message);
+        }
     }
 }
 </script>
@@ -48,12 +53,15 @@ export default {
 /* DESKTOP */
 .content {
     background-image: url("../assets/wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
 }
 
 .formContainer {
-    margin-top: 20%;
+    margin-top: 25%;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -74,17 +82,21 @@ export default {
     border-color: #333;
 }
 
+.submitContainer {
+    text-align: center;
+}
+
 /* Mobile */
 @media (min-width: 360px) and (max-width: 600px) {
     .formContainer {
-        margin-top: 50%;
+        margin-top: 40%;
     }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     .formContainer {
-        margin-top: 50%;
+        margin-top: 40%;
     }
 }
 </style>

@@ -50,8 +50,11 @@ export default {
 <style scoped>
 .content {
     background-image: url("../assets/wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
 }
 
 .infoContainer {
@@ -65,7 +68,7 @@ export default {
 /* Mobile */
 @media (min-width: 360px) and (max-width: 600px) {
     .infoContainer {
-        margin-top: 20%;
+        margin-top: 10%;
         margin-bottom: 10%;
     }
 }

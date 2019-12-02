@@ -29,13 +29,12 @@ export default {
 /* Desktop */
 .content {
     background-image: url("../assets/wallpaper.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
-
 .welcomeDiv {
     margin-top: 40%;
     border-radius: 10px;
@@ -46,14 +45,14 @@ h1 {
     text-align: center;
     margin-top: 15%;
     color: #fff;
-    text-shadow: 1px 1px 15px #000;
+    text-shadow: 1px 1px 8px #000;
 }
 
 p {
     font-size: 18px;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 15px #000;
+    text-shadow: 1px 1px 8px #000;
 }
 
 /* Mobile */
@@ -67,14 +66,14 @@ p {
         text-align: center;
         margin-top: 15%;
         color: #fff;
-        text-shadow: 1px 1px 15px #000;
+        text-shadow: 1px 1px 8px #000;
     }
 
     p {
         font-size: 18px;
         text-align: center;
         color: #fff;
-        text-shadow: 1px 1px 15px #000;
+        text-shadow: 1px 1px 8px #000;
     }
 }
 
