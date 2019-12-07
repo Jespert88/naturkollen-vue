@@ -41,9 +41,11 @@ export default {
                 "id": 0,
                 "name": "Varg",
                 "image": "https://images.unsplash.com/photo-1552249007-f19a9139bcde?ixlib=rb-1.2.1&auto=format&fit=crop&w=1344&q=80",
-                "description": "Vargen är utan tvekan världens kraftfullaste hunddjur." +
-                    "Den lever i familjegrupper i större revir. Namnet ”Varg” betyder på gammal svenska ”dräpare” eller ”tjuv” och är ett så kallat noanamn.",
-                "kidTitle": "Valp",
+                "description": 
+                    "Vargen är ett rovdjur vars utbredningsområde sträcker sig över stora delar av världen." + 
+                    " Vargen är det största vilda hunddjuret och en fullvuxen varg väger vanligen 30 till 50 kg.",
+                   
+                    "kidTitle": "Valp",
                 "kidImage": "https://images.unsplash.com/photo-1515253475595-2aa42d668c8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
                 "kidDesc": "Bild på en valp på 9 veckor."
             },
@@ -51,7 +53,7 @@ export default {
                 "id": 1,
                 "name": "Björn",
                 "image": "https://images.unsplash.com/photo-1551792714-9a8b35338793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1340&q=80",
-                "description": "Björnar är en familj av större rovdjur och som idag omfattar åtta arter som förekommer över stora delar av norra- och södra halvklotet. Björnar lever i Eurasien, Nord- och Sydamerika och de fanns tidigare även i norra Afrika.",
+                "description": "Björnar förekommer över stora delar av norra- och södra halvklotet. De lever i Eurasien, Nord- och Sydamerika och de fanns tidigare även i norra Afrika.",
                 "kidTitle": "Björnunge",
                 "kidImage": "https://images.unsplash.com/photo-1525869916826-972885c91c1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
                 "kidDesc": "Björnunge kallas bear cub på engelska."
@@ -60,25 +62,29 @@ export default {
                 "id": 2,
                 "name": "Älg",
                 "image": "https://images.unsplash.com/photo-1549471013-3364d7220b75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-                "description": "Björnar är en familj av större rovdjur och som idag omfattar åtta arter som förekommer över stora delar av norra- och södra halvklotet. Björnar lever i Eurasien, Nord- och Sydamerika och de fanns tidigare även i norra Afrika.",
+                "description": 
+                    "Älgar är de nu levande största hjortdjuren." + 
+                    " Till skillnad från de flesta hjortdjuren så lever älgar till största delen ensamma. De är dagaktiva och förflyttar sig stora sträckor per dygn.",
                 "kidTitle": "Älgkalv",
                 "kidImage": "https://images.unsplash.com/photo-1569343894830-c984d532eb41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-                "kidDesc": "Kalvarna, som växer snabbt under det första halvåret, brukar väga uppåt 150 kg när november kommer. Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt."
+                "kidDesc": "Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt."
             },
             {
                 "id": 3,
                 "name": "Rådjur",
-                "image": "https://images.unsplash.com/photo-1529526383488-04932fd2d32e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=812&q=80",
+                "image": "https://images.unsplash.com/photo-1498101365322-647e1438915f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
                 "description": "Rådjur är ett litet hjortdjur som förekommer i Europa och Mindre Asien. Benämningen på en vuxen hane är bock. Honan kallas för get eller rå, ungdjur under första året kallas kid eller killing, och getter som ännu inte fött kid kallas för smaldjur.",
                 "kidTitle": "Kid eller killing",
                 "kidImage": "https://images.unsplash.com/photo-1481695875655-fada44bb8e75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-                "kidDesc": "Kalvarna, som växer snabbt under det första halvåret, brukar väga uppåt 150 kg när november kommer. Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt."
+                "kidDesc": " Ungdjur under första året kallas kid eller killing."
             },
             {
                 "id": 4,
                 "name": "Vildsvin",
                 "image": "https://images.unsplash.com/photo-1545426908-a67f44ed0291?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
-                "description": "Vildsvin är ett partåigt hovdjur vars ursprungliga utbredningsområde sträckte sig från västra Europa till Sydostasien. Vildsvinet introducerades sedan i Nordamerika, Sydamerika, Australien och på många öar och har därför idag en nästan världsvid utbredning",
+                "description": 
+                    "Vildsvin är ett hovdjur vars ursprungliga utbredningsområde sträckte sig från västra Europa till Sydostasien." + 
+                    " Vildsvinet introducerades sedan i Nordamerika, Sydamerika, Australien och på många öar och har därför idag en nästan världsvid utbredning",
                 "kidTitle": "Kulting",
                 "kidImage": "https://images.unsplash.com/photo-1552249007-bb8debc3bbf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=500&q=60",
                 "kidDesc": "Vilsvinsens ungar kallas för kultingar."
@@ -87,7 +93,9 @@ export default {
                 "id": 5,
                 "name": "Räv",
                 "image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80",
-                "description": " Rödräv. Räven är ett av världens mest spridda rovdjur. Den är aktiv året runt och finns i alla miljöer, från kalfjället till städernas parker.",
+                "description": 
+                    "Räven är ett av världens mest spridda rovdjur." + 
+                    " Den är aktiv året runt och finns i alla miljöer, från kalfjället till städernas parker.",
                 "kidTitle": "Rävunge",
                 "kidImage": "https://images.unsplash.com/photo-1444754781737-af80b5324002?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
                 "kidDesc": "Bild på en rävunge."
@@ -99,7 +107,7 @@ export default {
                 "description": " Hackspettarna har en rak, stark, smal och vass näbb, med nästan cirkelrunt tvärsnitt, dock skiljer sig den proportionerliga längden mycket mellan olika grupper av hackspettar.",
                 "kidTitle": "Hackspett",
                 "kidImage": "https://images.unsplash.com/photo-1444465986331-f9f14553c73c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-                "kidDesc": "Bla bla bla."
+                "kidDesc": "Hackspettsungarna brukar vara kvar i boet upp till 24 dagar."
             },
             {
                 "id": 7,
@@ -108,7 +116,7 @@ export default {
                 "description": "Grävling eller europeisk grävling är ett rovdjur som tillhör familjen mårddjur och som förekommer i Eurasien.",
                 "kidTitle": "Grävling äter",
                 "kidImage": "https://images.unsplash.com/photo-1542462153-051e01f22e4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-                "kidDesc": "Bla bla bla."
+                "kidDesc": "Det här var gott de!"
             },
            
 

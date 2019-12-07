@@ -55,17 +55,14 @@ export default {
                         "name": "Al",
                         "image": "https://www.skogskunskap.se/Large/cd_4a9996/contentassets/781fd60cecdc487a94b3df53211e6bee/graal_blad_lars_rytter_1200x675px.jpg",
                         "description": "Alsläktet är ett släkte träd och buskar med cirka 25 arter i familjen björkväxter." +
-                            "De förekommer i den tempererade delen av norra hemisfären."
+                            " De förekommer i den tempererade delen av norra hemisfären."
                     },
                     {
                         "id": 1,
                         "name": "Alm",
                         "image": "https://www.skogskunskap.se/Large/cd_4a98b4/contentassets/e50b7ce38ed04382a1051f0117da8b47/ulmus_glabra_001_willow_creative-commons-cc-by-2.5_1200x675px.jpg",
-                        "description": "Skogsalm, i dagligt tal alm (Ulmus glabra Huds.)," +
-                            "är ett träd i familjen almväxter. I Sverige förekommer två underarter vanlig skogsalm," +
-                            "Ulmus glabra ssp. glabra, med tunnare bark, rakare grenar och och bredare blad och bergalm," +
-                            "Ulmus glabra ssp. montana mera lågvuxen med tjockare bark, något hängande grenar och smalare," +
-                            "nästan enkelsågade, blad."
+                        "description": "Skogsalm " +
+                            " är ett träd i familjen almväxter. I Sverige förekommer två underarter vilka är skogsalm samt bergalm."
                     },
                     {
                         "id": 2,
@@ -79,9 +76,8 @@ export default {
                         "id": 3,
                         "name": "Asp",
                         "image": "https://www.skogskunskap.se/Large/cd_4a9b41/contentassets/67015e741dc949ea895881c205e7deff/asp_lov_knivsta_mats_hannerz_1200x675px.jpg",
-                        "description": "Asp är ett snabbväxande träd i poppelsläktet, familjen videväxter." +
-                            "Det förekommer i tempererade Europa och österut till Kina och Japan, samt ett isolerat bestånd i Nordafrika, i Algeriet." +
-                            "Asp finns i hela Sverige upp till trädgränsen och är den enda arten i släktet som betraktas som naturligt förekommande i landet."
+                        "description": "Asp är ett snabbväxande träd i poppelsläktet av familjen videväxter." +
+                            " Asp finns i hela Sverige och är den enda arten i släktet som betraktas som naturligt förekommande i landet."
                     },
                     {
                         "id": 4,
@@ -93,15 +89,15 @@ export default {
                         "id": 5,
                         "name": "Ek",
                         "image": "https://www.skogskunskap.se/Large/cd_4ac4bf/contentassets/d7af7508edb044ef92df01422bc27535/img_7606-ekollon_mats_hannerz_1200x675px.jpg",
-                        "description": "Det finns två arter av ek i Sverige. Ek (skogsek, stjälkek) är den vanligaste. Bergek (druvek) är ganska allmän i Götaland, särskilt i kustområdena."
+                        "description": "Det finns två arter av ek i Sverige som vanligt förekommande, skogsek och stjälkek."
                     },
                     {
                         "id": 6,
                         "name": "Lind",
                         "image": "https://www.skogskunskap.se/Large/cd_4ad0a7/contentassets/5964c2be90124833a4112f3362732e20/iphone-lind-blad_mats_hannerz_1200x675px.jpg",
                         "description": "Linden kan bli 30 meter hög och har kort, kraftig stam med en stor, rikt förgrenad krona." +
-                            "Linden kan bli mycket gammal och kan skjuta nya skott även när den blivit avbruten." +
-                            "Bladen är hjärtformade med sågad kant och rödbruna hårtofsar i nervvinklarna på undersidan."
+                            " Linden kan bli mycket gammal och kan skjuta nya skott även när den blivit avbruten." +
+                            " Bladen är hjärtformade med sågad kant och rödbruna hårtofsar i nervvinklarna på undersidan."
                     },
                     {
                         "id": 7,
