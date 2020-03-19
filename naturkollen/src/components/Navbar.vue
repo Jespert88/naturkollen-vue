@@ -20,9 +20,6 @@
                 <li class="nav-item active">
                      <router-link class="nav-link" to="/about"> Om naturkollen </router-link>
                 </li>
-                <li class="nav-item active">
-                     <router-link class="nav-link" to="/contact"> Kontakt </router-link>
-                </li>
                <!--  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
@@ -51,6 +48,6 @@ export default {
     }
 
     .nav-link:hover {
-        text-shadow: 1px 1px 10px #222;
+        text-shadow: 1px 1px 10px rgb(145, 255, 0);
     }
 </style>

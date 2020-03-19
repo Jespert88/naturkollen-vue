@@ -1,26 +1,10 @@
 <template>
   <div>
-    <div class="card">
-      <!-- <img v-bind:src="tree.image" v-bind:alt="tree.image" class="img-fluid" /> -->
-      <img :src="tree.image" class="img-fluid" />
-
-      <div class="card-body">
-        <h2 class="card-title" style="text-align:center;">{{tree.name}}</h2>
-        <button
-          class="btn btn-success"
-          style="width:100%;"
-          data-toggle="collapse"
-          :data-target="'#collapseExample' + tree.id"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-          v-on:click="toggle"
-        >Information</button>
-
-        <div class="collapse" :id="'collapseExample' + tree.id">
-          <div class="card-body">
-            <p class="card-text">{{tree.description}}</p>
-          </div>
-        </div>
+    <div class="card" v-on:click="isHidden = !isHidden">
+      <img :src="tree.image" class="img-fluid" id="CardImg" />
+      <h2 class="card-title">{{tree.name}}</h2>
+      <div class="backOfCard" v-if="!isHidden">
+        {{tree.description}}
       </div>
     </div>
   </div>
@@ -29,10 +13,11 @@
 <script>
 export default {
   name: "Card",
-  data(){
-      return{
-          bodyID: {}
-      }
+  data() {
+    return {
+      bodyID: {},
+      isHidden: true
+    };
   },
   props: {
     animal: {},
@@ -50,23 +35,112 @@ export default {
 /* Desktop */
 .card {
   border: 0;
+  height: 20rem;
   width: 18rem;
-  box-shadow: 1px 1px 10px #222;
+  box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
 }
+
+#CardImg {
+  height: 20rem;
+  object-fit: cover !important;
+}
+
+.backOfCard {
+  height: 20rem;
+  width: 18rem;
+  position: absolute;
+  padding: 10px;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+
+.card-title {
+ position: absolute;
+ bottom: 0px;
+ color: #fff;
+ text-align: center;
+ width: 100%;
+ text-shadow: 1px 1px 8px #000;
+}
+
 /* Mobile */
 @media (min-width: 360px) and (max-width: 600px) {
   .card {
-    border: 0;
-    width: auto;
-    box-shadow: 1px 1px 10px #222;
-  }
+  border: 0;
+  height: 20rem;
+  width: auto;
+  box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
+}
+
+#CardImg {
+  height: 20rem;
+  object-fit: cover !important;
+}
+
+.backOfCard {
+  height: 20rem;
+  width: auto;
+  position: absolute;
+  padding: 10px;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+
+.card-title {
+ position: absolute;
+ bottom: 0px;
+ color: #fff;
+ text-align: center;
+ width: 100%;
+ text-shadow: 1px 1px 8px #000;
+}
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .card {
-    border: 0;
-    width: auto;
-    box-shadow: 1px 1px 10px #222;
-  }
+   .card {
+  border: 0;
+  height: 20rem;
+  width: auto;
+  box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
 }
+
+#CardImg {
+  height: 20rem;
+  object-fit: cover !important;
+}
+
+.backOfCard {
+  height: 20rem;
+  width: auto;
+  position: absolute;
+  padding: 10px;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+
+.card-title {
+ position: absolute;
+ bottom: 0px;
+ color: #fff;
+ text-align: center;
+ width: 100%;
+ text-shadow: 1px 1px 8px #000;
+}
+}
+
+/* OLD CODE SAVING */
+/* 
+   <div class="card" v-on:click="isHidden = !isHidden"> 
+       <img :src="tree.image" class="img-fluid" id="CardImg" />
+       <h2 class="card-title">{{tree.name}}</h2>
+
+      <div class="card-body">
+        <div class="card-body" v-if="!isHidden">
+            <p class="card-text">{{tree.description}}</p>
+        </div>
+      </div>
+      
+    </div>
+ */
 </style>
+

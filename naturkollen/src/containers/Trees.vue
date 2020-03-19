@@ -4,6 +4,7 @@
       <div class="row no-gutters">
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
         <div class="col-sm-12 col-md-10 col-xl-12">
+          <h1 id="TreePageTitle"> Klicka på korten för info om trädarten </h1>
           <div id="grid">
             <!-- <Card v-for="user in userArray" :key="user.id" :user="user" /> -->
             <Card v-for="tree in treeArray" :key="tree.id" :tree="tree" />
@@ -140,10 +141,16 @@ this.errors.push(e)
 #grid {
   margin: 5%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 10px;
   grid-row-gap: 20px;
+}
+
+#TreePageTitle {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Mobile */
@@ -165,6 +172,13 @@ this.errors.push(e)
     font-size: 22px;
     line-height: 22px;
   }
+
+  #TreePageTitle {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
 
 /* Tablet */
@@ -176,6 +190,22 @@ this.errors.push(e)
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+  }
+
+   .btn-to-top {
+    width: 20px;
+    height: 20px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  #TreePageTitle {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 </style>

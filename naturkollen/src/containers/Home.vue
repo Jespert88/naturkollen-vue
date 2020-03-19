@@ -8,7 +8,7 @@
 
                 <div class="welcomeDiv">
                     <h1>Välkommen till naturkollen</h1>
-                    <p>Detta är en webbapplikation som är skapad ur ett hobby och träningssyfte.</p>
+                    <p>{{info}}</p>
                 </div>
 
             </div>
@@ -21,14 +21,23 @@
 
 <script>
 export default {
+    data() {
+        return {
+            info: ""
+        }
+    },
 
+    created: function () {
+        this.info = "Lär dig om Sveriges djur och natur"
+    }
 }
 </script>
 
 <style scoped>
 /* Desktop */
 .content {
-    background-image: url("../assets/wallpaper.jpg");
+    /* Picture from Michi S från Pixabay */
+    background-image: url("../assets/wallpaper2.png");
     /* background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -45,14 +54,14 @@ h1 {
     text-align: center;
     margin-top: 15%;
     color: #fff;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 8px rgb(24, 49, 13);
 }
 
 p {
     font-size: 18px;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 8px rgb(24, 49, 13);
 }
 
 /* Mobile */

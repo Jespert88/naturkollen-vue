@@ -40,16 +40,15 @@ export default {
         }
     },
     created: function () {
-        this.info = "Denna applikation är skapad ur ett hobby och lärningsyfte." +
-        " Där grund motivationen till att den existerar var för att lära mig Vue.js samt att samtidigt visa hur en naturapplikation" +
-        "skulle kunna se ut."
+        this.info = "Syftet med denna applikationen var att lära mig Vue.js" +
+        " samt att ha en mall att kunna gå tillbaka till."
     }
 }
 </script>
 
 <style scoped>
 .content {
-    background-image: url("../assets/wallpaper.jpg");
+    background-image: url("../assets/wallpaper2.png");
     /* background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -59,10 +58,11 @@ export default {
 
 .infoContainer {
     margin-top: 20%;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #222;
+    box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
+    color: #fff;
 }
 
 /* Mobile */

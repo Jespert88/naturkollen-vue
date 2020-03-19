@@ -3,7 +3,6 @@ import Router from "vue-router"
 
 import Home from '../containers/Home'
 import About from '../containers/About'
-import Contact from '../containers/Contact'
 import Trees from '../containers/Trees'
 import Animals from '../containers/Animals'
 
@@ -22,11 +21,6 @@ export default new Router({
 			path: "/about",
 			name: "About",
 			component: About
-		},
-		{
-			path: "/contact",
-			name: "Contact",
-			component: Contact
 		},
 		{
 			path: "/trees",
