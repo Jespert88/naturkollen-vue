@@ -15,6 +15,16 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+
+  /* This watch is for letting the router know wich route it should say in the page title. */
+  watch: {
+        $route: {
+            immediate: true,
+            handler(to) {
+                document.title = to.meta.title || 'Some Default Title';
+            }
+        },
   }
 }
 </script>

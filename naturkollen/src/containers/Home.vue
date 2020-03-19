@@ -1,6 +1,5 @@
 <template>
 <div class="content">
-
     <div class="container-fluid">
         <div class="row no-gutters">
             <div class="col-sm-12 col-md-1 col-xl-4"></div>
@@ -36,7 +35,7 @@ export default {
 <style scoped>
 /* Desktop */
 .content {
-    /* Picture from Michi S från Pixabay */
+    /* Picture from Michi S from Pixabay */
     background-image: url("../assets/wallpaper2.png");
     /* background-repeat: no-repeat;
     -webkit-background-size: cover;

@@ -88,6 +88,34 @@ export default {
       },
       {
         id: 4,
+        name: "Dovhjort",
+        image:
+          "https://images.unsplash.com/photo-1472636913292-1c4e82356d75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+        description:
+          "Dovhjort (Dama dama) är ett hjortdjur som är mindre än kronhjorten. Troligen var arten före senaste istiden begränsad till södra Europa och Turkiet." + 
+          " Den ökade sedan sitt utbredningsområde till Centraleuropa, delvis med människans hjälp. Sedan blev arten introducerad i flera andra delar av världen. ",
+        kidTitle: "Kid eller killing",
+        kidImage:
+          "",
+        kidDesc: ""
+      },
+      {
+        id: 5,
+        name: "Kronhjort",
+        image:
+          "https://images.unsplash.com/photo-1543756605-a90da919605a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+        description:
+        "Kronhjortens utbredningsområde sträcker sig från Europa och Nordafrika till västra Centralasien." + 
+        " Hanhjorten (hjorten) når en längd av 175 till 225 cm från nosen till svansroten; svansens längd är ytterligare cirka 15 cm." + 
+        " Mankhöjden över bogen uppgår till mellan 130 och 160 cm. Levandevikt för normalhjorten cirka 200 kg men kan uppgå till 300 kg. Honan (hinden) är betydligt mindre." + 
+        " Kroppsvikten är ungefär 45 till 50 % av hannens kroppsvikt och i Norden stiger honans vikt sällan över 170 kg.",
+        kidTitle: "Kid eller killing",
+        kidImage:
+          "",
+        kidDesc: ""
+      },
+      {
+        id: 6,
         name: "Vildsvin",
         image:
           "https://images.unsplash.com/photo-1545426908-a67f44ed0291?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
@@ -100,7 +128,7 @@ export default {
         kidDesc: "Vilsvinsens ungar kallas för kultingar."
       },
       {
-        id: 5,
+        id: 7,
         name: "Räv",
         image:
           "https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80",
@@ -113,19 +141,23 @@ export default {
         kidDesc: "Bild på en rävunge."
       },
       {
-        id: 6,
-        name: "Hackspett",
+        id: 8,
+        name: "Lodjur",
         image:
-          "https://images.unsplash.com/photo-1516286782004-877e5dfdf5ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+          "https://cdn.pixabay.com/photo/2019/01/10/03/04/bobcat-3924734_960_720.jpg",
         description:
-          " Hackspettarna har en rak, stark, smal och vass näbb, med nästan cirkelrunt tvärsnitt, dock skiljer sig den proportionerliga längden mycket mellan olika grupper av hackspettar.",
-        kidTitle: "Hackspett",
+          "Lodjur (Lynx på engelska) är ett kattdjur som förekommer i Europa och Asien." + 
+          " Lodjuret är Europas största kattdjur och fanns en gång i skogar över stora delar av den europeiska kontinenten och vidare österut till Sibirien." + "\n" +
+          " Kroppslängden brukar vara mellan 80-130 cm och vikten 15-25 kg på ett fullvuxet djur.",
+        kidTitle: "",
         kidImage:
-          "https://images.unsplash.com/photo-1444465986331-f9f14553c73c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-        kidDesc: "Hackspettsungarna brukar vara kvar i boet upp till 24 dagar."
+          "https://images.unsplash.com/photo-1532986701744-5cee048ef948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+        kidDesc: "Parningstiden är i mars-april. I maj-juni föder honan en till fyra ungar som hon ensam tar ansvar för." + 
+        " Ungarna följer sin mamma i nästan ett år. Av henne lär de sig bland annat att jaga och döda byten." + 
+        " När ungarna är knappt två år blir de könsmogna."
       },
       {
-        id: 7,
+        id: 9,
         name: "Grävling",
         image:
           "https://images.unsplash.com/photo-1562706941-7deb2b208718?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
@@ -135,6 +167,59 @@ export default {
         kidImage:
           "https://images.unsplash.com/photo-1542462153-051e01f22e4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         kidDesc: "Det här var gott de!"
+      },
+      {
+        id: 10,
+        name: "Hare",
+        image:
+          "https://images.unsplash.com/photo-1506108198627-b100e11bbc47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+        description:
+          "Info om hararna här! Det finns två sorter! " + 
+          " Kroppslängden ligger vanligen mellan 40 och 70 centimeter. Vikten ligger mellan 1,3 och 7 kilogram där honorna oftast är större samt tyngre än hannarna. ",
+        kidTitle: "",
+        kidImage:
+          "",
+        kidDesc: ""
+      },
+      {
+        id: 11,
+        name: "Mord",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/9/91/Martes_martes_in_Sweden.jpg",
+        description:
+          "Mård är ett skogslevande mellanstort rovdjur i familjen mårddjur som förekommer i större delen av Europa och delar av västra Asien. Mården ska inte blandas samman med mårdhunden, där den senare inte är ett mårddjur utan ett hunddjur. ",
+        kidTitle: "",
+        kidImage:
+          "",
+        kidDesc: ""
+      },
+      {
+        id: 12,
+        name: "Mink",
+        image:
+          "https://bilder.svenskjakt.se/w:2048/h:1365/q:auto/https://svenskjakt.se/wp-content/uploads/2018/06/11011-4171-8.jpg",
+        description:
+          "Mink är ett nordamerikanskt mårddjur som har introducerats till många länder, bland annat Skandinavien, för pälsdjursuppfödning." + 
+          " Minken är 30–45 cm lång, exklusive svansen på 13–23 cm. Hanen är större än honan och väger mellan 1–1,5 kg, medan honan vanligtvis väger omkring 0,75 kg.",
+        kidTitle: "",
+        kidImage:
+          "",
+        kidDesc: ""
+      },
+      {
+        id: 13,
+        name: "Järv",
+        image:
+          "https://www.jaktojagare.se/upload/_Articles/21863/Images/15687/jarv.jpg/Large/jarv.jpg",
+        description:
+          "Järv är ett rovdjur i familjen mårddjur." + 
+          " Vuxna individer blir 65–105 centimeter långa och därtill kommer en 13–26 centimeter lång svans." + 
+          " Den vuxna honan väger 9–11 kg och hanen 14–16 kg. Kroppen är ganska kort och relativt kraftig med tjocka ben." + 
+          " Arten påminner därför mer om en liten björn än om ett mårddjur.",
+        kidTitle: "",
+        kidImage:
+          "",
+        kidDesc: ""
       }
     ];
   }

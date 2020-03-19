@@ -39,6 +39,9 @@ export default {
   width: 18rem;
   box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
 }
+.card:hover {
+  cursor: pointer;
+}
 
 #CardImg {
   height: 20rem;

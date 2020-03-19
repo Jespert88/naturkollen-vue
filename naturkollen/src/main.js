@@ -7,6 +7,7 @@ Vue.use(router)
 Vue.use(BackToTop)
 Vue.config.productionTip = false
 
+
 new Vue({
   router,
   render: h => h(App),

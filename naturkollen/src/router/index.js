@@ -15,22 +15,35 @@ export default new Router({
 		{
 			path: "/",
 			name: "Home",
-			component: Home
+			component: Home,
+			meta: {
+				title: 'Home'
+			}
 		},
 		{
 			path: "/about",
 			name: "About",
-			component: About
+			component: About,
+			meta: {
+				title: 'About'
+			}
 		},
 		{
 			path: "/trees",
 			name: "Trees",
-			component: Trees
+			component: Trees,
+			meta: {
+				title: 'Trees'
+			}
+			
 		},
 		{
 			path: "/animals",
 			name: "Animals",
-			component: Animals
+			component: Animals,
+			meta: {
+				title: 'Animals'
+			}
 		},
 		
 		/* {
