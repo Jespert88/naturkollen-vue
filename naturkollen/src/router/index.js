@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from "vue-router"
 
-import Home from '../containers/Home'
-import About from '../containers/About'
-import Trees from '../containers/Trees'
-import Animals from '../containers/Animals'
+import Home from '../pages/Home'
+import About from '../pages/About'
+import Trees from '../pages/Trees'
+import Animals from '../pages/Animals'
 
 Vue.use(Router)
 

@@ -40,21 +40,29 @@ export default {
         image:
           "https://images.unsplash.com/photo-1552249007-f19a9139bcde?ixlib=rb-1.2.1&auto=format&fit=crop&w=1344&q=80",
         description:
-          "Vargen är ett rovdjur vars utbredningsområde sträcker sig över stora delar av världen." +
-          " Vargen är det största vilda hunddjuret och en fullvuxen varg väger vanligen 30 till 50 kg.",
-
+          "Vargen är ett rovdjur vars utbredningsområde sträcker sig över stora delar av världen samt är det största vilda hunddjuret ",
+        male: "Hane",
+        female: "Tik",
+        height: "66 – 81 cm",
+        weight: "30 - 50 kg (fullvuxen)",
         kidTitle: "Valp",
         kidImage:
           "https://images.unsplash.com/photo-1515253475595-2aa42d668c8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
-        kidDesc: "Bild på en valp på 9 veckor."
+        kidDesc:
+          "Vargar parar sig i februari–mars och valparna föds efter 63 dygn. De första valparna börjar vandra ut i mars/april då de är cirka 12 månader." +
+          " Bilden visar en vargmamma ihop med sin valp på 9 veckor."
       },
       {
         id: 1,
         name: "Björn",
         image:
-          "https://images.unsplash.com/photo-1551792714-9a8b35338793?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1340&q=80",
+          "https://lh3.googleusercontent.com/proxy/btNcGI-rO-yyem7npgA3tad5FuDOZFo0xY0TkD_bZBqF5VQWQolo27yRFBPplTYQLaUFM2v47zM_DSFOXqcDcV43tfwauMkvzPAHJWBj4U3bFnls_2vgUTEjm26F_hAIttk",
         description:
           "Björnar förekommer över stora delar av norra- och södra halvklotet. De lever i Eurasien, Nord- och Sydamerika och de fanns tidigare även i norra Afrika.",
+        male: "Hane",
+        female: "Hona",
+        height: "70 – 150 cm",
+        weight: "80 – 600 kg (Vuxen)",
         kidTitle: "Björnunge",
         kidImage:
           "https://images.unsplash.com/photo-1525869916826-972885c91c1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
@@ -68,6 +76,10 @@ export default {
         description:
           "Älgar är de nu levande största hjortdjuren." +
           " Till skillnad från de flesta hjortdjuren så lever älgar till största delen ensamma. De är dagaktiva och förflyttar sig stora sträckor per dygn.",
+        male: "Tjur",
+        female: "Ko eller Kviga (om ej fått kalv)",
+        height: "140 – 210 cm",
+        weight: "380 - 700 kg (Vuxen)",
         kidTitle: "Älgkalv",
         kidImage:
           "https://images.unsplash.com/photo-1569343894830-c984d532eb41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
@@ -78,9 +90,13 @@ export default {
         id: 3,
         name: "Rådjur",
         image:
-          "https://images.unsplash.com/photo-1498101365322-647e1438915f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
+          "https://upload.wikimedia.org/wikipedia/commons/e/ed/Siberian_roe_deer.jpg",
         description:
           "Rådjur är ett litet hjortdjur som förekommer i Europa och Mindre Asien. Benämningen på en vuxen hane är bock. Honan kallas för get eller rå, ungdjur under första året kallas kid eller killing, och getter som ännu inte fött kid kallas för smaldjur.",
+        male: "Bock",
+        female: "Get eller rå",
+        height: "70 - 75 cm",
+        weight: "20 - 30 kg (Vuxen)",
         kidTitle: "Kid eller killing",
         kidImage:
           "https://images.unsplash.com/photo-1481695875655-fada44bb8e75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
@@ -92,12 +108,17 @@ export default {
         image:
           "https://images.unsplash.com/photo-1472636913292-1c4e82356d75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
         description:
-          "Dovhjort (Dama dama) är ett hjortdjur som är mindre än kronhjorten. Troligen var arten före senaste istiden begränsad till södra Europa och Turkiet." + 
+          "Dovhjort (Dama dama) är ett hjortdjur som är mindre än kronhjorten. Troligen var arten före senaste istiden begränsad till södra Europa och Turkiet." +
           " Den ökade sedan sitt utbredningsområde till Centraleuropa, delvis med människans hjälp. Sedan blev arten introducerad i flera andra delar av världen. ",
-        kidTitle: "Kid eller killing",
+        male: "Bock",
+        female: "Hind",
+        height: "73 - 91 cm",
+        weight: "46 – 80 kg",
+        kidTitle: "Kalv eller kid",
         kidImage:
-          "",
-        kidDesc: ""
+          "https://lh3.googleusercontent.com/proxy/ig2uENwSpV-QouTaO5bF-NM-MoPq-hGnTaVve7omgnA53IcpW-pzDr3_TD58LuMrRMqBz-rnGegflXMMiJWVJ8v5Z38ZLPuay4u7xQGMYqoLGH8SvFJ1tQzlUgQAvQlvAY1XOfwOxZUcGg",
+        kidDesc:
+          "Brunsttiden infaller normalt i oktober och varar till början av november. Hondjuret, eller hinden, får normalt en kalv, ibland två, som föds i maj-juni. "
       },
       {
         id: 5,
@@ -105,13 +126,15 @@ export default {
         image:
           "https://images.unsplash.com/photo-1543756605-a90da919605a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
         description:
-        "Kronhjortens utbredningsområde sträcker sig från Europa och Nordafrika till västra Centralasien." + 
-        " Hanhjorten (hjorten) når en längd av 175 till 225 cm från nosen till svansroten; svansens längd är ytterligare cirka 15 cm." + 
-        " Mankhöjden över bogen uppgår till mellan 130 och 160 cm. Levandevikt för normalhjorten cirka 200 kg men kan uppgå till 300 kg. Honan (hinden) är betydligt mindre." + 
-        " Kroppsvikten är ungefär 45 till 50 % av hannens kroppsvikt och i Norden stiger honans vikt sällan över 170 kg.",
-        kidTitle: "Kid eller killing",
-        kidImage:
-          "",
+          "Kronhjortens utbredningsområde sträcker sig från Europa och Nordafrika till västra Centralasien." +
+          " Mankhöjden över bogen uppgår till mellan 130 och 160 cm. Levandevikt för normalhjorten cirka 200 kg men kan uppgå till 300 kg. Honan (hinden) är betydligt mindre." +
+          " Kroppsvikten är ungefär 45 till 50 % av hannens kroppsvikt och i Norden stiger honans vikt sällan över 170 kg.",
+        male: "Hjort, tjur eller bock",
+        female: "Ko eller hind",
+        height: "130 och 160 cm",
+        weight: "200 - 300 kg (Vuxen)",
+        kidTitle: "",
+        kidImage: "",
         kidDesc: ""
       },
       {
@@ -122,6 +145,10 @@ export default {
         description:
           "Vildsvin är ett hovdjur vars ursprungliga utbredningsområde sträckte sig från västra Europa till Sydostasien." +
           " Vildsvinet introducerades sedan i Nordamerika, Sydamerika, Australien och på många öar och har därför idag en nästan världsvid utbredning",
+        male: "Galt",
+        female: "Sugga",
+        height: "100cm",
+        weight: "Hane (upp till 230kg), sugga (70 - 140kg)",
         kidTitle: "Kulting",
         kidImage:
           "https://images.unsplash.com/photo-1552249007-bb8debc3bbf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=500&q=60",
@@ -135,10 +162,15 @@ export default {
         description:
           "Räven är ett av världens mest spridda rovdjur." +
           " Den är aktiv året runt och finns i alla miljöer, från kalfjället till städernas parker.",
-        kidTitle: "Rävunge",
-        kidImage:
-          "https://images.unsplash.com/photo-1444754781737-af80b5324002?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        kidDesc: "Bild på en rävunge."
+        male: "Hane",
+        female: "Hona",
+        height: "35 – 50 cm",
+        weight: "2,2 – 14 kg",
+        kidTitle: "Valp",
+        kidImage: "https://www.midbec.se/wp-content/uploads/2016/01/unge.png",
+        kidDesc:
+          "Parningen brukar var mellan januari och februari" +
+          " Honan föder vanligtvis tre till fem ungar, i sällsynta fall bara en eller upp till tretton valpar."
       },
       {
         id: 8,
@@ -146,15 +178,20 @@ export default {
         image:
           "https://cdn.pixabay.com/photo/2019/01/10/03/04/bobcat-3924734_960_720.jpg",
         description:
-          "Lodjur (Lynx på engelska) är ett kattdjur som förekommer i Europa och Asien." + 
-          " Lodjuret är Europas största kattdjur och fanns en gång i skogar över stora delar av den europeiska kontinenten och vidare österut till Sibirien." + "\n" +
+          "Lodjur (Lynx på engelska) är ett kattdjur som förekommer i Europa och Asien." +
+          " Lodjuret är Europas största kattdjur och fanns en gång i skogar över stora delar av den europeiska kontinenten och vidare österut till Sibirien."+
           " Kroppslängden brukar vara mellan 80-130 cm och vikten 15-25 kg på ett fullvuxet djur.",
-        kidTitle: "",
+        male: "Hane",
+        female: "Hona",
+        height: "55 – 75 cm",
+        weight: "18 - 30 kg",
+        kidTitle: "Lodjursunge",
         kidImage:
-          "https://images.unsplash.com/photo-1532986701744-5cee048ef948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-        kidDesc: "Parningstiden är i mars-april. I maj-juni föder honan en till fyra ungar som hon ensam tar ansvar för." + 
-        " Ungarna följer sin mamma i nästan ett år. Av henne lär de sig bland annat att jaga och döda byten." + 
-        " När ungarna är knappt två år blir de könsmogna."
+          "https://thumb.mp-farm.com/3046265/preview.jpg",
+        kidDesc:
+          "Parningstiden är i mars-april. I maj-juni föder honan en till fyra ungar som hon ensam tar ansvar för." +
+          " Ungarna följer sin mamma i nästan ett år. Av henne lär de sig bland annat att jaga och döda byten." +
+          " När ungarna är knappt två år blir de könsmogna."
       },
       {
         id: 9,
@@ -163,10 +200,15 @@ export default {
           "https://images.unsplash.com/photo-1562706941-7deb2b208718?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         description:
           "Grävling eller europeisk grävling är ett rovdjur som tillhör familjen mårddjur och som förekommer i Eurasien.",
-        kidTitle: "Grävling äter",
+        male: "Hane",
+        female: "Hona",
+        height: "Ingen info hittad",
+        weight: "10 -17 kg",
+        kidTitle: "Grävlingunge",
         kidImage:
-          "https://images.unsplash.com/photo-1542462153-051e01f22e4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-        kidDesc: "Det här var gott de!"
+          "https://husdjursblogg.glanna.se/wp-content/uploads/gravling.jpg",
+        kidDesc: "Parningstiden är i nordliga trakter vanligen mars till maj men kan pågå ända till hösten." + 
+        " Ungarna föds vanligen i februari till mars året därpå. Honan får 1 till 4 ungar per kull."
       },
       {
         id: 10,
@@ -174,24 +216,32 @@ export default {
         image:
           "https://images.unsplash.com/photo-1506108198627-b100e11bbc47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
         description:
-          "Info om hararna här! Det finns två sorter! " + 
+          "Info om hararna här! Det finns två sorter! " +
           " Kroppslängden ligger vanligen mellan 40 och 70 centimeter. Vikten ligger mellan 1,3 och 7 kilogram där honorna oftast är större samt tyngre än hannarna. ",
-        kidTitle: "",
-        kidImage:
-          "",
-        kidDesc: ""
+        male: "Hane",
+        female: "Hona",
+        height: "Ingen info hittad",
+        weight: "2 - 4 kg",
+        kidTitle: "Harunge",
+        kidImage: "https://bilder.svenskjakt.se/w:auto/h:auto/q:auto/https://svenskjakt.se/wp-content/uploads/converted_files/24066/24066-thumb.jpg",
+        kidDesc: "Parningsperioden börjar redan i februari, harhonan brukar i regel föda upp till tre kullar per säsong. "
       },
       {
         id: 11,
-        name: "Mord",
+        name: "Mård",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/9/91/Martes_martes_in_Sweden.jpg",
         description:
           "Mård är ett skogslevande mellanstort rovdjur i familjen mårddjur som förekommer i större delen av Europa och delar av västra Asien. Mården ska inte blandas samman med mårdhunden, där den senare inte är ett mårddjur utan ett hunddjur. ",
-        kidTitle: "",
-        kidImage:
-          "",
-        kidDesc: ""
+        male: "Hane",
+        female: "Hona",
+        height: "Ingen info hittad",
+        weight: "0,8 och 5,5 kg",
+        kidTitle: "Mård unge",
+        kidImage: "https://thumbs.dreamstime.com/z/ung-m%C3%A5rd-55511970.jpg",
+        kidDesc: "Parningssäsongen äger rum i juni till augusti." +
+        " ungarna föds vanligtvis mellan mars och maj." +
+        " Ungarna blir könsmogna vid ungefär 1 års ålder. I naturen kan mården bli omkring 10 år gammal."
       },
       {
         id: 12,
@@ -199,12 +249,15 @@ export default {
         image:
           "https://bilder.svenskjakt.se/w:2048/h:1365/q:auto/https://svenskjakt.se/wp-content/uploads/2018/06/11011-4171-8.jpg",
         description:
-          "Mink är ett nordamerikanskt mårddjur som har introducerats till många länder, bland annat Skandinavien, för pälsdjursuppfödning." + 
+          "Mink är ett nordamerikanskt mårddjur som har introducerats till många länder, bland annat Skandinavien, för pälsdjursuppfödning." +
           " Minken är 30–45 cm lång, exklusive svansen på 13–23 cm. Hanen är större än honan och väger mellan 1–1,5 kg, medan honan vanligtvis väger omkring 0,75 kg.",
-        kidTitle: "",
-        kidImage:
-          "",
-        kidDesc: ""
+         male: "Hane",
+        female: "Hona",
+        height: "Ingen info hittad",
+        weight: "1 – 1,5 kg",
+        kidTitle: "Mink unge",
+        kidImage: "https://cdn2.cdnme.se/cdn/9-1/404252/images/2007/minkhona_med_unge_1198399099_14058341.jpg",
+        kidDesc: "Minken inleder sin parning i mars. Hanen kan para sig med flera honor.I början av maj föds ungarna vilket brukar bli mella 3 - 6 stycken. "
       },
       {
         id: 13,
@@ -212,14 +265,17 @@ export default {
         image:
           "https://www.jaktojagare.se/upload/_Articles/21863/Images/15687/jarv.jpg/Large/jarv.jpg",
         description:
-          "Järv är ett rovdjur i familjen mårddjur." + 
-          " Vuxna individer blir 65–105 centimeter långa och därtill kommer en 13–26 centimeter lång svans." + 
-          " Den vuxna honan väger 9–11 kg och hanen 14–16 kg. Kroppen är ganska kort och relativt kraftig med tjocka ben." + 
+          "Järv är ett rovdjur i familjen mårddjur." +
+          " Vuxna individer blir 65–105 centimeter långa och därtill kommer en 13–26 centimeter lång svans." +
+          " Den vuxna honan väger 9–11 kg och hanen 14–16 kg. Kroppen är ganska kort och relativt kraftig med tjocka ben." +
           " Arten påminner därför mer om en liten björn än om ett mårddjur.",
-        kidTitle: "",
-        kidImage:
-          "",
-        kidDesc: ""
+        male: "Hane",
+        female: "Hona",
+        height: "Ingen info hittad",
+        weight: "14 - 16 kg",
+        kidTitle: "Järvs ungar kallas för valpar",
+        kidImage: "https://4.bp.blogspot.com/-SAU2_1nCbGU/T-TdRz85LEI/AAAAAAAAExw/l0Ml5KQcfak/s1600/1014570_520_292.jpg",
+        kidDesc: "Järvar parar sig från april till augusti med en ökad aktivitet i juni. Kullen brukar bestå av 1 - 5 valpar."
       }
     ];
   }
