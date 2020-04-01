@@ -49,14 +49,14 @@ export default {
         kidImage:
           "https://images.unsplash.com/photo-1515253475595-2aa42d668c8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
         kidDesc:
-          "Vargar parar sig i februari–mars och valparna föds efter 63 dygn. De första valparna börjar vandra ut i mars/april då de är cirka 12 månader." +
+          "Vargar parar sig i februari–mars och valparna brukar födas efter 63 dygn. De första valparna börjar vandra ut i mars/april då de är cirka 12 månader." +
           " Bilden visar en vargmamma ihop med sin valp på 9 veckor."
       },
       {
         id: 1,
         name: "Björn",
         image:
-          "https://lh3.googleusercontent.com/proxy/btNcGI-rO-yyem7npgA3tad5FuDOZFo0xY0TkD_bZBqF5VQWQolo27yRFBPplTYQLaUFM2v47zM_DSFOXqcDcV43tfwauMkvzPAHJWBj4U3bFnls_2vgUTEjm26F_hAIttk",
+          "https://www.borasdjurpark.se/wp-content/uploads/2013/04/brunbjorn01-768x432.jpg",
         description:
           "Björnar förekommer över stora delar av norra- och södra halvklotet. De lever i Eurasien, Nord- och Sydamerika och de fanns tidigare även i norra Afrika.",
         male: "Hane",
@@ -66,7 +66,8 @@ export default {
         kidTitle: "Björnunge",
         kidImage:
           "https://images.unsplash.com/photo-1525869916826-972885c91c1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-        kidDesc: "Björnunge kallas bear cub på engelska."
+        kidDesc: "Parningstiden för björnar ligger mella maj och juni." +
+        " Vartannat år föder honan en till fyra ungar som väger mellan 400 gram till 2 kilogram vid födseln."
       },
       {
         id: 2,
@@ -74,7 +75,7 @@ export default {
         image:
           "https://images.unsplash.com/photo-1549471013-3364d7220b75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         description:
-          "Älgar är de nu levande största hjortdjuren." +
+          "Älgar är de största levande hjortdjuren." +
           " Till skillnad från de flesta hjortdjuren så lever älgar till största delen ensamma. De är dagaktiva och förflyttar sig stora sträckor per dygn.",
         male: "Tjur",
         female: "Ko eller Kviga (om ej fått kalv)",
@@ -84,7 +85,8 @@ export default {
         kidImage:
           "https://images.unsplash.com/photo-1569343894830-c984d532eb41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         kidDesc:
-          "Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt."
+          "Parningstiden äger rum på hösten och följer sedan en dräktighet på åtta månader (230–240 dygn)." +
+          " Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt."
       },
       {
         id: 3,
@@ -108,9 +110,9 @@ export default {
         image:
           "https://images.unsplash.com/photo-1472636913292-1c4e82356d75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
         description:
-          "Dovhjort (Dama dama) är ett hjortdjur som är mindre än kronhjorten. Troligen var arten före senaste istiden begränsad till södra Europa och Turkiet." +
-          " Den ökade sedan sitt utbredningsområde till Centraleuropa, delvis med människans hjälp. Sedan blev arten introducerad i flera andra delar av världen. ",
-        male: "Bock",
+          "Dovhjort är ett hjortdjur som är mindre än kronhjorten." +
+          " Dovhjort har ofta om sommaren rödbrun päls med vita prickar, svart rygglinje och vit mage. På vintern är den mer gråbrun.",
+        male: "Hjort",
         female: "Hind",
         height: "73 - 91 cm",
         weight: "46 – 80 kg",

@@ -41,7 +41,8 @@ export default {
 
 <style>
     #Navbar {
-        background-color: #649651 !important;
+        /* background-color: #649651 !important; */
+        background-color: #52684a !important;
     }
 
     .nav-link:hover {

@@ -7,9 +7,9 @@
           <h1 id="TreePageTitle"> Klicka på korten för info om trädarten </h1>
           <div id="grid">
             <!-- <Card v-for="user in userArray" :key="user.id" :user="user" /> -->
-            <Card v-for="tree in treeArray" :key="tree.id" :tree="tree" />
-
-            <back-to-top text="hej" visibleoffset="500" bottom="30px" right="30px">
+            <TreeCard v-for="tree in treeArray" :key="tree.id" :tree="tree"/>
+            
+            <back-to-top text="no text" visibleoffset="500" bottom="30px" right="30px">
               <img src="../assets/up-arrow.png" class="img-fluid" id="toTopBtn" />
             </back-to-top>
           </div>
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import Card from "../components/Card.vue";
+import TreeCard from "../components/TreeCard.vue";
 /* import axios from 'axios'; */
 export default {
   name: "Trees",
   components: {
-    Card
+    TreeCard
   },
 
   data() {
@@ -40,8 +40,6 @@ export default {
   // Fetches user from (https://jsonplaceholder.typicode.com/users) when the component is created.
 
   /* ASCII code dot = "&#149;"  space = "&nbsp;" */
-
-  /* Borrowed info and images about trees from  https://www.skogskunskap.se/ */
   mounted() {
     try {
       this.treeArray = [

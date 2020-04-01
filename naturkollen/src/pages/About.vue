@@ -41,19 +41,19 @@ export default {
     },
     created: function () {
         this.info = "Syftet med denna applikationen var att lära mig Vue.js" +
-        " samt att ha en mall att kunna gå tillbaka till."
+        " samt att ha en mall att utgå ifrån."
     }
 }
 </script>
 
 <style scoped>
 .content {
-    background-image: url("../assets/wallpaper2.png");
-    /* background-repeat: no-repeat;
+    background-image: url("../assets/wallpaper.jpg");
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .infoContainer {
@@ -61,7 +61,7 @@ export default {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
+    /* box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5); */
     color: #fff;
 }
 

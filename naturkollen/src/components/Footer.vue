@@ -29,7 +29,8 @@ export default {
   width: 100%;
   padding: 10px;
   text-align: center;
-  background-color: #649651 !important;
+  /* background-color: #649651 !important; */
+  background-color: #52684a !important;
   color: #fff;
   clear: both;
 }

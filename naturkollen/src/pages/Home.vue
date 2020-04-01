@@ -2,8 +2,8 @@
 <div class="content">
     <div class="container-fluid">
         <div class="row no-gutters">
-            <div class="col-sm-12 col-md-1 col-xl-4"></div>
-            <div class="col-sm-12 col-md-10 col-xl-4">
+            <div class="col-sm-12 col-md-1 col-xl-3"></div>
+            <div class="col-sm-12 col-md-10 col-xl-6">
 
                 <div class="welcomeDiv">
                     <h1>Välkommen till naturkollen</h1>
@@ -11,7 +11,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-12 col-md-1 col-xl-4"></div>
+            <div class="col-sm-12 col-md-1 col-xl-3"></div>
         </div>
     </div>
 
@@ -36,20 +36,20 @@ export default {
 /* Desktop */
 .content {
     /* Picture from Michi S from Pixabay */
-    background-image: url("../assets/wallpaper2.png");
-    /* background-repeat: no-repeat;
+    background-image: url("../assets/wallpaper.jpg");
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
 }
 .welcomeDiv {
-    margin-top: 40%;
+    margin-top: 35%;
     border-radius: 10px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
     margin-top: 15%;
     color: #fff;
@@ -57,7 +57,7 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 8px rgb(24, 49, 13);
