@@ -4,11 +4,11 @@
       <div class="row no-gutters">
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
         <div class="col-sm-12 col-md-10 col-xl-12">
-          <h1 id="TreePageTitle"> Klicka på korten för info om trädarten </h1>
+          <h1 id="TreePageTitle">Klicka på korten för info om trädarten</h1>
           <div id="grid">
-            <!-- <Card v-for="user in userArray" :key="user.id" :user="user" /> -->
-            <TreeCard v-for="tree in treeArray" :key="tree.id" :tree="tree"/>
-            
+            <!-- <TreeCard v-for="user in userArray" :key="user.id" :user="user" /> -->
+            <TreeCard v-for="tree in treeArray" :key="tree.id" :tree="tree" />
+
             <back-to-top text="no text" visibleoffset="500" bottom="30px" right="30px">
               <img src="../assets/up-arrow.png" class="img-fluid" id="toTopBtn" />
             </back-to-top>
@@ -22,7 +22,7 @@
 
 <script>
 import TreeCard from "../components/TreeCard.vue";
-/* import axios from 'axios'; */
+/* import axios from "axios"; */
 export default {
   name: "Trees",
   components: {
@@ -36,10 +36,7 @@ export default {
       errors: []
     };
   },
-  /* https://randomuser.me/api/?results=10 */
-  // Fetches user from (https://jsonplaceholder.typicode.com/users) when the component is created.
 
-  /* ASCII code dot = "&#149;"  space = "&nbsp;" */
   mounted() {
     try {
       this.treeArray = [
@@ -62,9 +59,9 @@ export default {
           description:
             "Skogsalm " +
             "Almen delas ibland in i underarterna skogsalm (Ulmus glabra ssp. glabra) och bergalm (U. glabra ssp. montana)." +
-            " Almen är ett 30-40 meter högt träd med rak stam och mörk, grov skorpbark." + 
+            " Almen är ett 30-40 meter högt träd med rak stam och mörk, grov skorpbark." +
             " Kronan är tät med uppåtgående huvudgrenar med utböjda spetsar." +
-            "Bladen är hela med mycket korta bladskaft och en sned bladbas." + 
+            "Bladen är hela med mycket korta bladskaft och en sned bladbas." +
             " Översidan är mycket sträv av små borstlika hår. Bladen sitter i ett och samma plan." +
             " Almen har runda blomknoppar i nedre delen av skotten och smalare bladknoppar längre upp."
         },
@@ -79,7 +76,6 @@ export default {
             " Ofta hävdas även att asken fäller sina blad först av alla lövträd om hösten." +
             " Asken kan bli över 30 meter hög med en rundad krona och båglikt uppåtriktade grenar." +
             " Asken är parbladig med uddblad. Bladen och skotten sitter alltid i par, på motsatta sidor om skottet."
-
         },
         {
           id: 3,
@@ -91,8 +87,8 @@ export default {
             " Asp finns i hela Sverige och är den enda arten i släktet som betraktas som naturligt förekommande i landet." +
             " Aspen har en skoglig betydelse i Sverige, vanlig asp (Populus tremula) och hybridasp (P. tremula x P. tremuloides)." +
             " Hybridaspen är en korsning mellan amerikansk och europeisk asp, och den räknas som en införd art." +
-            " Den vanliga aspen har en medeltillväxt på 8-9 m3sk per ha och år på bra mark." + 
-            " Hybridaspen, som är en korsning (arthybrid) mellan europeisk och amerikansk asp, växer däremot med över 20 m3sk per ha och år." + 
+            " Den vanliga aspen har en medeltillväxt på 8-9 m3sk per ha och år på bra mark." +
+            " Hybridaspen, som är en korsning (arthybrid) mellan europeisk och amerikansk asp, växer däremot med över 20 m3sk per ha och år." +
             " Hybridasp började framställas under 1940-talet, framför allt för att ge virke till tändsticksindustrin."
         },
         {
@@ -112,7 +108,7 @@ export default {
             "https://cdn.pixabay.com/photo/2019/06/19/19/41/oak-leaf-4285529_960_720.jpg",
           description:
             "Det finns två arter av ek i Sverige. Ek (skogsek, stjälkek) är den vanligaste. Bergek (druvek) är ganska allmän i Götaland, särskilt i kustområdena." +
-            " Eken är vårt vanligaste ädla lövträd och har i långa tider fyllt viktiga funktioner för folkhushållet genom ollonproduktion och virke, och för statsmakterna genom att den garanterat bland annat skeppsvirke." + 
+            " Eken är vårt vanligaste ädla lövträd och har i långa tider fyllt viktiga funktioner för folkhushållet genom ollonproduktion och virke, och för statsmakterna genom att den garanterat bland annat skeppsvirke." +
             " Eken har en nyckelroll för den biologiska mångfalden."
         },
         {
@@ -137,14 +133,17 @@ export default {
             " Avenboken blommar i maj samtidigt som lövsprickningen."
         }
       ];
+
+      // Fetches user from (https://jsonplaceholder.typicode.com/users) when the component is created.
+      /* axios.get("https://jsonplaceholder.typicode.com/users")
+      .then(response => {
+        this.userArray = response.data;
+        console.log(this.userArray);
+      }) */
+        
     } catch (error) {
       console.log(error);
     }
-
-    /* axios.get('https://jsonplaceholder.typicode.com/users')
-.then(response => {}).catch(e => {
-this.errors.push(e)
-}) */
   }
 };
 </script>
@@ -214,7 +213,7 @@ this.errors.push(e)
     grid-row-gap: 20px;
   }
 
-   .btn-to-top {
+  .btn-to-top {
     width: 20px;
     height: 20px;
     padding: 10px 16px;

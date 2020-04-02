@@ -48,19 +48,14 @@ export default {
 
 <style scoped>
 .content {
-    background-image: url("../assets/wallpaper.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url("../assets/wallpaper3.jpg");
 }
 
 .infoContainer {
     margin-top: 20%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     /* box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5); */
     color: #fff;
 }

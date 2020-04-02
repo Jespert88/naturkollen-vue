@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                     <router-link class="nav-link" to="/trees"> Trädarter </router-link>
+                     <router-link class="nav-link" to="/trees"> Träd </router-link>
                 </li>
                  <li class="nav-item active">
-                     <router-link class="nav-link" to="/animals"> Djurarter </router-link>
+                     <router-link class="nav-link" to="/animals"> Djur </router-link>
                 </li>
                 <li class="nav-item active">
                      <router-link class="nav-link" to="/about"> Om naturkollen </router-link>

@@ -1,9 +1,25 @@
 <template>
   <div>
+
     <div class="card" v-on:click="isHidden = !isHidden">
       <img :src="tree.image" class="img-fluid" id="CardImg" />
       <h2 class="card-title">{{tree.name}}</h2>
-      <div class="backOfCard" v-if="!isHidden">{{tree.description}}</div>
+
+      <div class="backOfCard" v-if="!isHidden">
+        <h4 style="text-align:center;">{{tree.name}}</h4>
+        <p class="card-text">{{tree.description}}</p>
+      </div>
+
+    <!-- Fake user api -->
+    <!-- <div class="card" v-on:click="isHidden = !isHidden">
+      <img :src="tree.image" class="img-fluid" id="CardImg" />
+      <h2 class="card-title">{{user.name}}</h2>
+
+      <div class="backOfCard" v-if="!isHidden">
+        <h4 style="text-align:center;">{{user.name}}</h4>
+        <p class="card-text">{{user.description}}</p>
+      </div> -->
+
     </div>
   </div>
 </template>
@@ -18,13 +34,13 @@ export default {
     };
   },
   props: {
-    animal: {},
-    tree: {}
+    tree: {},
+    user: {}
   },
   methods: {
-    toggle: function() {
+    /*  toggle: function() {
       this.bodyID = this.tree.id;
-    }
+    } */
   }
 };
 </script>
@@ -53,6 +69,7 @@ export default {
   padding: 10px;
   background-color: #f2f2f2;
   overflow-y: auto;
+  z-index: 1050;
 }
 
 .card-title {
@@ -79,10 +96,10 @@ export default {
   }
 
   .backOfCard {
-    height: 20rem;
-    width: auto;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    padding: 10px;
+    padding: 20px;
     background-color: #f2f2f2;
     overflow-y: auto;
   }
