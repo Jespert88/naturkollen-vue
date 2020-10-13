@@ -1,0 +1,74 @@
+/* 
+==============
+ Desktop
+==============
+*/
+
+/* CONTAINERS */
+.pageContainer {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url("../../img/wallpaper3.jpg");
+}
+
+.centerContainer {
+  display: flexbox;
+  align-items: center;
+  text-align: center;
+}
+
+/* TEXT */
+.welcomeTitle {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 15%;
+  color: #fff;
+  text-shadow: 1px 1px 8px rgb(24, 49, 13);
+}
+
+.smallTitle {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 8px rgb(24, 49, 13);
+}
+
+.text {
+  font-size: 18px;
+  color: #222;
+}
+
+.whiteText {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px 8px rgb(24, 49, 13);
+}
+
+/* 
+=============
+ Mobile View
+=============
+*/
+@media (min-width: 360px) and (max-width: 600px) {
+  .WelcomeTitle {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15%;
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+  }
+
+  .text {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+  }
+}
+
+/* 
+=============
+ Tablet View
+=============
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
