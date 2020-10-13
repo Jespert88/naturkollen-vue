@@ -5,12 +5,12 @@
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
         <div class="col-sm-12 col-md-10 col-xl-12">
           <div class="grid">
-            <AnimalCard
+            <AppAnimalCard
               v-for="animal in animalArray"
               :key="animal.id"
               :animal="animal"
             />
-            <ToTopBtn />
+            <AppToTopBtn />
           </div>
         </div>
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
@@ -20,13 +20,13 @@
 </template>
 
 <script>
-import AnimalCard from "../components/AnimalCard.vue";
-import ToTopBtn from "../components/ToTopBtn.vue";
+import AppAnimalCard from "../components/AppAnimalCard.vue";
+import AppToTopBtn from "../components/AppToTopBtn.vue";
 export default {
   name: "Animals",
   components: {
-    AnimalCard,
-    ToTopBtn,
+    AppAnimalCard,
+    AppToTopBtn,
   },
   data() {
     return {

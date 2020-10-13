@@ -5,7 +5,11 @@
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
         <div class="col-sm-12 col-md-10 col-xl-12">
           <div class="grid">
-            <TreeCard v-for="tree in treeArray" :key="tree.id" :tree="tree" />
+            <AppTreeCard
+              v-for="tree in treeArray"
+              :key="tree.id"
+              :tree="tree"
+            />
           </div>
         </div>
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
@@ -15,12 +19,12 @@
 </template>
 
 <script>
-import TreeCard from "../components/TreeCard.vue";
+import AppTreeCard from "../components/AppTreeCard.vue";
 /* import axios from "axios"; */
 export default {
   name: "Trees",
   components: {
-    TreeCard,
+    AppTreeCard,
   },
 
   data() {

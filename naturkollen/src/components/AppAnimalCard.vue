@@ -66,7 +66,7 @@ export default {
 };
 </script>
 <style>
-@import "../assets/css/components/AnimalCard.css";
+@import "../assets/css/components/AppAnimalCard.css";
 </style>
 
 

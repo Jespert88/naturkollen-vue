@@ -1,32 +1,32 @@
 <template>
   <div id="app">
-    <Navbar />
+    <AppNavbar />
     <router-view />
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+import AppNavbar from "./components/AppNavbar.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Navbar,
-    Footer
+    AppNavbar,
+    AppFooter,
   },
 
   /* This watch is for letting the router know wich route it should say in the page title. */
   watch: {
-        $route: {
-            immediate: true,
-            handler(to) {
-                document.title = to.meta.title || 'Some Default Title';
-            }
-        },
-  }
-}
+    $route: {
+      immediate: true,
+      handler(to) {
+        document.title = to.meta.title || "Some Default Title";
+      },
+    },
+  },
+};
 </script>
 
 <style>
@@ -36,6 +36,6 @@ export default {
   flex-direction: column;
 }
 .content {
-  flex :1; 
+  flex: 1;
 }
 </style>

@@ -17,5 +17,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/css/components/ToTopBtn.css";
+@import "../assets/css/components/AppToTopBtn.css";
 </style>
