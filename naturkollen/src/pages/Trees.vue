@@ -1,17 +1,15 @@
 <template>
-  <div class="content">
+  <div id="pageContainer">
     <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
         <div class="col-sm-12 col-md-10 col-xl-12">
-          <h1 id="TreePageTitle">Klicka på korten för info om trädarten</h1>
-          <div id="grid">
-            <!-- <TreeCard v-for="user in userArray" :key="user.id" :user="user" /> -->
-            <TreeCard v-for="tree in treeArray" :key="tree.id" :tree="tree" />
-
-            <back-to-top text="no text" visibleoffset="500" bottom="30px" right="30px">
-              <img src="../assets/up-arrow.png" class="img-fluid" id="toTopBtn" />
-            </back-to-top>
+          <div class="grid">
+            <AppTreeCard
+              v-for="tree in treeArray"
+              :key="tree.id"
+              :tree="tree"
+            />
           </div>
         </div>
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
@@ -21,19 +19,19 @@
 </template>
 
 <script>
-import TreeCard from "../components/TreeCard.vue";
+import AppTreeCard from "../components/AppTreeCard.vue";
 /* import axios from "axios"; */
 export default {
   name: "Trees",
   components: {
-    TreeCard
+    AppTreeCard,
   },
 
   data() {
     return {
       /* userArray: [], */
       treeArray: [],
-      errors: []
+      errors: [],
     };
   },
 
@@ -49,7 +47,7 @@ export default {
             "Alarna står tillsammans för 1,5 % av det totala virkesförrådet på produktiv skogsmark." +
             " Båda alarterna är mycket snabbväxande i ungdomen, gråalen något mer än klibbalen." +
             " Alarna har kvävefixerande bakterier i rotknölar och kan därför binda luftkväve." +
-            " De fäller löven gröna med kvävet i behåll. Alarna är därför goda markförbättrare och kvävegödslare."
+            " De fäller löven gröna med kvävet i behåll. Alarna är därför goda markförbättrare och kvävegödslare.",
         },
         {
           id: 1,
@@ -63,7 +61,7 @@ export default {
             " Kronan är tät med uppåtgående huvudgrenar med utböjda spetsar." +
             "Bladen är hela med mycket korta bladskaft och en sned bladbas." +
             " Översidan är mycket sträv av små borstlika hår. Bladen sitter i ett och samma plan." +
-            " Almen har runda blomknoppar i nedre delen av skotten och smalare bladknoppar längre upp."
+            " Almen har runda blomknoppar i nedre delen av skotten och smalare bladknoppar längre upp.",
         },
         {
           id: 2,
@@ -75,7 +73,7 @@ export default {
             " Fullvuxna träd är omtalade för att deras löv slår ut med en skir grönska sist av alla lövträd." +
             " Ofta hävdas även att asken fäller sina blad först av alla lövträd om hösten." +
             " Asken kan bli över 30 meter hög med en rundad krona och båglikt uppåtriktade grenar." +
-            " Asken är parbladig med uddblad. Bladen och skotten sitter alltid i par, på motsatta sidor om skottet."
+            " Asken är parbladig med uddblad. Bladen och skotten sitter alltid i par, på motsatta sidor om skottet.",
         },
         {
           id: 3,
@@ -89,7 +87,7 @@ export default {
             " Hybridaspen är en korsning mellan amerikansk och europeisk asp, och den räknas som en införd art." +
             " Den vanliga aspen har en medeltillväxt på 8-9 m3sk per ha och år på bra mark." +
             " Hybridaspen, som är en korsning (arthybrid) mellan europeisk och amerikansk asp, växer däremot med över 20 m3sk per ha och år." +
-            " Hybridasp började framställas under 1940-talet, framför allt för att ge virke till tändsticksindustrin."
+            " Hybridasp började framställas under 1940-talet, framför allt för att ge virke till tändsticksindustrin.",
         },
         {
           id: 4,
@@ -99,7 +97,7 @@ export default {
           description:
             "I Sverige finns två virkesproducerande arter - vårtbjörk (Betula pendula) och glasbjörk (Betula pubescens)." +
             " Björkarna utgör tillsammans 2/3 av landets totala lövträdsvolym, eller 12 % av det totala virkesförrådet på produktiv skogsmark." +
-            " Båda arterna växer bäst på friska näringsrika marker. Vårtbjörken har en medelproduktion på omkring 10 m3sk per ha och år på bra marker."
+            " Båda arterna växer bäst på friska näringsrika marker. Vårtbjörken har en medelproduktion på omkring 10 m3sk per ha och år på bra marker.",
         },
         {
           id: 5,
@@ -109,7 +107,7 @@ export default {
           description:
             "Det finns två arter av ek i Sverige. Ek (skogsek, stjälkek) är den vanligaste. Bergek (druvek) är ganska allmän i Götaland, särskilt i kustområdena." +
             " Eken är vårt vanligaste ädla lövträd och har i långa tider fyllt viktiga funktioner för folkhushållet genom ollonproduktion och virke, och för statsmakterna genom att den garanterat bland annat skeppsvirke." +
-            " Eken har en nyckelroll för den biologiska mångfalden."
+            " Eken har en nyckelroll för den biologiska mångfalden.",
         },
         {
           id: 6,
@@ -120,7 +118,7 @@ export default {
             "I Sverige finns två arter lindar. Den vanligaste kallas lind eller skogslind (Tilia cordata) medan bohuslinden (Tilia platyphyllos) är mycket ovanlig och bara växer vilt i Bohuslän." +
             " Linden kan bli 30 meter hög och har kort, kraftig stam med en stor, rikt förgrenad krona." +
             " Linden kan bli mycket gammal och kan skjuta nya skott även när den blivit avbruten." +
-            " Bladen är hjärtformade med sågad kant och rödbruna hårtofsar i nervvinklarna på undersidan."
+            " Bladen är hjärtformade med sågad kant och rödbruna hårtofsar i nervvinklarna på undersidan.",
         },
         {
           id: 7,
@@ -130,8 +128,8 @@ export default {
           description:
             "Avenboken växer bara i de allra sydligaste landskapen i Sverige. Virket är det tyngsta och hårdaste av alla svenska trädslag." +
             " Avenboken är ofta ett ganska kortvuxet träd och får en vid och rund krona när den växer fritt. Den påminner om boken med sin grå stam och täta lövverk. Stammen är täckt av längsgående åsar." +
-            " Avenboken blommar i maj samtidigt som lövsprickningen."
-        }
+            " Avenboken blommar i maj samtidigt som lövsprickningen.",
+        },
       ];
 
       // Fetches user from (https://jsonplaceholder.typicode.com/users) when the component is created.
@@ -140,93 +138,13 @@ export default {
         this.userArray = response.data;
         console.log(this.userArray);
       }) */
-        
     } catch (error) {
       console.log(error);
     }
-  }
+  },
 };
 </script>
 
-<style scoped>
-/* Desktop */
-
-#toTopBtn {
-  height: 40px;
-  widows: 40px;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: rgb(71, 161, 71);
-}
-
-#grid {
-  margin: 5%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
-}
-
-#TreePageTitle {
-  text-align: center;
-  margin-top: 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Mobile */
-@media (min-width: 360px) and (max-width: 600px) {
-  #grid {
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
-  }
-
-  .btn-to-top {
-    width: 20px;
-    height: 20px;
-    padding: 10px 16px;
-    border-radius: 50%;
-    font-size: 22px;
-    line-height: 22px;
-  }
-
-  #TreePageTitle {
-    text-align: center;
-    margin-top: 10%;
-    font-size: 20px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #grid {
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
-
-  .btn-to-top {
-    width: 20px;
-    height: 20px;
-    padding: 10px 16px;
-    border-radius: 50%;
-    font-size: 22px;
-    line-height: 22px;
-  }
-
-  #TreePageTitle {
-    text-align: center;
-    margin-top: 10%;
-    font-size: 25px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-}
+<style>
+@import "../assets/css/pages/Trees.css";
 </style>

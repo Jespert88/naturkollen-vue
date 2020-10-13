@@ -4,12 +4,13 @@
       <div class="row no-gutters">
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
         <div class="col-sm-12 col-md-10 col-xl-12">
-          <h1 id="animalPageTitle">Klicka på korten för info om djurarterna</h1>
-          <div id="grid">
-            <AnimalCard v-for="animal in animalArray" :key="animal.id" :animal="animal" />
-            <back-to-top text="hej" visibleoffset="500" bottom="30px" right="30px">
-              <img src="../assets/up-arrow.png" class="img-fluid" id="toTopBtn" />
-            </back-to-top>
+          <div class="grid">
+            <AppAnimalCard
+              v-for="animal in animalArray"
+              :key="animal.id"
+              :animal="animal"
+            />
+            <AppToTopBtn />
           </div>
         </div>
         <div class="col-sm-1 col-md-1 col-xl-0"></div>
@@ -19,20 +20,22 @@
 </template>
 
 <script>
-import AnimalCard from "../components/AnimalCard.vue";
+import AppAnimalCard from "../components/AppAnimalCard.vue";
+import AppToTopBtn from "../components/AppToTopBtn.vue";
 export default {
   name: "Animals",
   components: {
-    AnimalCard
+    AppAnimalCard,
+    AppToTopBtn,
   },
   data() {
     return {
       animalArray: [],
-      errors: []
+      errors: [],
     };
   },
 
-  created: function() {
+  created: function () {
     this.animalArray = [
       {
         id: 0,
@@ -50,7 +53,7 @@ export default {
           "https://images.unsplash.com/photo-1515253475595-2aa42d668c8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
         kidDesc:
           "Vargar parar sig i februari–mars och valparna brukar födas efter 63 dygn. De första valparna börjar vandra ut i mars/april då de är cirka 12 månader." +
-          " Bilden visar en vargmamma ihop med sin valp på 9 veckor."
+          " Bilden visar en vargmamma ihop med sin valp på 9 veckor.",
       },
       {
         id: 1,
@@ -66,8 +69,9 @@ export default {
         kidTitle: "Björnunge",
         kidImage:
           "https://images.unsplash.com/photo-1525869916826-972885c91c1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-        kidDesc: "Parningstiden för björnar ligger mella maj och juni." +
-        " Vartannat år föder honan en till fyra ungar som väger mellan 400 gram till 2 kilogram vid födseln."
+        kidDesc:
+          "Parningstiden för björnar ligger mella maj och juni." +
+          " Vartannat år föder honan en till fyra ungar som väger mellan 400 gram till 2 kilogram vid födseln.",
       },
       {
         id: 2,
@@ -86,7 +90,7 @@ export default {
           "https://images.unsplash.com/photo-1569343894830-c984d532eb41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
         kidDesc:
           "Parningstiden äger rum på hösten och följer sedan en dräktighet på åtta månader (230–240 dygn)." +
-          " Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt."
+          " Älgkalvarna går i sällskap med sina mödrar fram till någon vecka innan modern kalvar på nytt.",
       },
       {
         id: 3,
@@ -102,7 +106,7 @@ export default {
         kidTitle: "Kid eller killing",
         kidImage:
           "https://images.unsplash.com/photo-1481695875655-fada44bb8e75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-        kidDesc: " Ungdjur under första året kallas kid eller killing."
+        kidDesc: " Ungdjur under första året kallas kid eller killing.",
       },
       {
         id: 4,
@@ -120,7 +124,7 @@ export default {
         kidImage:
           "https://lh3.googleusercontent.com/proxy/ig2uENwSpV-QouTaO5bF-NM-MoPq-hGnTaVve7omgnA53IcpW-pzDr3_TD58LuMrRMqBz-rnGegflXMMiJWVJ8v5Z38ZLPuay4u7xQGMYqoLGH8SvFJ1tQzlUgQAvQlvAY1XOfwOxZUcGg",
         kidDesc:
-          "Brunsttiden infaller normalt i oktober och varar till början av november. Hondjuret, eller hinden, får normalt en kalv, ibland två, som föds i maj-juni. "
+          "Brunsttiden infaller normalt i oktober och varar till början av november. Hondjuret, eller hinden, får normalt en kalv, ibland två, som föds i maj-juni. ",
       },
       {
         id: 5,
@@ -137,7 +141,7 @@ export default {
         weight: "200 - 300 kg (Vuxen)",
         kidTitle: "",
         kidImage: "",
-        kidDesc: ""
+        kidDesc: "",
       },
       {
         id: 6,
@@ -154,7 +158,7 @@ export default {
         kidTitle: "Kulting",
         kidImage:
           "https://images.unsplash.com/photo-1552249007-bb8debc3bbf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=500&q=60",
-        kidDesc: "Vilsvinsens ungar kallas för kultingar."
+        kidDesc: "Vilsvinsens ungar kallas för kultingar.",
       },
       {
         id: 7,
@@ -172,7 +176,7 @@ export default {
         kidImage: "https://www.midbec.se/wp-content/uploads/2016/01/unge.png",
         kidDesc:
           "Parningen brukar var mellan januari och februari" +
-          " Honan föder vanligtvis tre till fem ungar, i sällsynta fall bara en eller upp till tretton valpar."
+          " Honan föder vanligtvis tre till fem ungar, i sällsynta fall bara en eller upp till tretton valpar.",
       },
       {
         id: 8,
@@ -181,19 +185,18 @@ export default {
           "https://cdn.pixabay.com/photo/2019/01/10/03/04/bobcat-3924734_960_720.jpg",
         description:
           "Lodjur (Lynx på engelska) är ett kattdjur som förekommer i Europa och Asien." +
-          " Lodjuret är Europas största kattdjur och fanns en gång i skogar över stora delar av den europeiska kontinenten och vidare österut till Sibirien."+
+          " Lodjuret är Europas största kattdjur och fanns en gång i skogar över stora delar av den europeiska kontinenten och vidare österut till Sibirien." +
           " Kroppslängden brukar vara mellan 80-130 cm och vikten 15-25 kg på ett fullvuxet djur.",
         male: "Hane",
         female: "Hona",
         height: "55 – 75 cm",
         weight: "18 - 30 kg",
         kidTitle: "Lodjursunge",
-        kidImage:
-          "https://thumb.mp-farm.com/3046265/preview.jpg",
+        kidImage: "https://thumb.mp-farm.com/3046265/preview.jpg",
         kidDesc:
           "Parningstiden är i mars-april. I maj-juni föder honan en till fyra ungar som hon ensam tar ansvar för." +
           " Ungarna följer sin mamma i nästan ett år. Av henne lär de sig bland annat att jaga och döda byten." +
-          " När ungarna är knappt två år blir de könsmogna."
+          " När ungarna är knappt två år blir de könsmogna.",
       },
       {
         id: 9,
@@ -209,8 +212,9 @@ export default {
         kidTitle: "Grävlingunge",
         kidImage:
           "https://husdjursblogg.glanna.se/wp-content/uploads/gravling.jpg",
-        kidDesc: "Parningstiden är i nordliga trakter vanligen mars till maj men kan pågå ända till hösten." + 
-        " Ungarna föds vanligen i februari till mars året därpå. Honan får 1 till 4 ungar per kull."
+        kidDesc:
+          "Parningstiden är i nordliga trakter vanligen mars till maj men kan pågå ända till hösten." +
+          " Ungarna föds vanligen i februari till mars året därpå. Honan får 1 till 4 ungar per kull.",
       },
       {
         id: 10,
@@ -225,8 +229,10 @@ export default {
         height: "Ingen info hittad",
         weight: "2 - 4 kg",
         kidTitle: "Harunge",
-        kidImage: "https://bilder.svenskjakt.se/w:auto/h:auto/q:auto/https://svenskjakt.se/wp-content/uploads/converted_files/24066/24066-thumb.jpg",
-        kidDesc: "Parningsperioden börjar redan i februari, harhonan brukar i regel föda upp till tre kullar per säsong. "
+        kidImage:
+          "https://bilder.svenskjakt.se/w:auto/h:auto/q:auto/https://svenskjakt.se/wp-content/uploads/converted_files/24066/24066-thumb.jpg",
+        kidDesc:
+          "Parningsperioden börjar redan i februari, harhonan brukar i regel föda upp till tre kullar per säsong. ",
       },
       {
         id: 11,
@@ -241,9 +247,10 @@ export default {
         weight: "0,8 och 5,5 kg",
         kidTitle: "Mård unge",
         kidImage: "https://thumbs.dreamstime.com/z/ung-m%C3%A5rd-55511970.jpg",
-        kidDesc: "Parningssäsongen äger rum i juni till augusti." +
-        " ungarna föds vanligtvis mellan mars och maj." +
-        " Ungarna blir könsmogna vid ungefär 1 års ålder. I naturen kan mården bli omkring 10 år gammal."
+        kidDesc:
+          "Parningssäsongen äger rum i juni till augusti." +
+          " ungarna föds vanligtvis mellan mars och maj." +
+          " Ungarna blir könsmogna vid ungefär 1 års ålder. I naturen kan mården bli omkring 10 år gammal.",
       },
       {
         id: 12,
@@ -253,13 +260,15 @@ export default {
         description:
           "Mink är ett nordamerikanskt mårddjur som har introducerats till många länder, bland annat Skandinavien, för pälsdjursuppfödning." +
           " Minken är 30–45 cm lång, exklusive svansen på 13–23 cm. Hanen är större än honan och väger mellan 1–1,5 kg, medan honan vanligtvis väger omkring 0,75 kg.",
-         male: "Hane",
+        male: "Hane",
         female: "Hona",
         height: "Ingen info hittad",
         weight: "1 – 1,5 kg",
         kidTitle: "Mink unge",
-        kidImage: "https://cdn2.cdnme.se/cdn/9-1/404252/images/2007/minkhona_med_unge_1198399099_14058341.jpg",
-        kidDesc: "Minken inleder sin parning i mars. Hanen kan para sig med flera honor.I början av maj föds ungarna vilket brukar bli mella 3 - 6 stycken. "
+        kidImage:
+          "https://cdn2.cdnme.se/cdn/9-1/404252/images/2007/minkhona_med_unge_1198399099_14058341.jpg",
+        kidDesc:
+          "Minken inleder sin parning i mars. Hanen kan para sig med flera honor.I början av maj föds ungarna vilket brukar bli mella 3 - 6 stycken. ",
       },
       {
         id: 13,
@@ -276,74 +285,17 @@ export default {
         height: "Ingen info hittad",
         weight: "14 - 16 kg",
         kidTitle: "Järvs ungar kallas för valpar",
-        kidImage: "https://4.bp.blogspot.com/-SAU2_1nCbGU/T-TdRz85LEI/AAAAAAAAExw/l0Ml5KQcfak/s1600/1014570_520_292.jpg",
-        kidDesc: "Järvar parar sig från april till augusti med en ökad aktivitet i juni. Kullen brukar bestå av 1 - 5 valpar."
-      }
+        kidImage:
+          "https://4.bp.blogspot.com/-SAU2_1nCbGU/T-TdRz85LEI/AAAAAAAAExw/l0Ml5KQcfak/s1600/1014570_520_292.jpg",
+        kidDesc:
+          "Järvar parar sig från april till augusti med en ökad aktivitet i juni. Kullen brukar bestå av 1 - 5 valpar.",
+      },
     ];
-  }
+  },
 };
 </script>
 
 <style>
-/* Desktop */
-#toTopBtn {
-  height: 40px;
-  widows: 40px;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: rgb(71, 161, 71);
-}
-
-#grid {
-  margin: 5%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 40px;
-}
-
-#animalPageTitle {
-  text-align: center;
-  margin-top: 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Mobile */
-@media (min-width: 360px) and (max-width: 600px) {
-  #grid {
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
-  }
-
-  #animalPageTitle {
-    text-align: center;
-    margin-top: 10%;
-    font-size: 25px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #grid {
-    margin: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
-  }
-
-  #animalPageTitle {
-    text-align: center;
-    margin-top: 10%;
-    font-size: 30px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-}
+@import "../assets/css/pages/Animal.css";
+@import "../assets/css/pages/pageGlobalStyles.css";
 </style>
