@@ -13,46 +13,21 @@ DESKTOP
 .card:hover {
   cursor: pointer;
 }
-.card-text {
-  padding: 5px;
-}
-.card-list {
-  margin-left: 20px;
-}
+
 #CardImg {
   height: 25rem;
   object-fit: cover !important;
 }
 
-.modalShadow {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
-}
 .animalModal {
-  border-radius: 5px;
-  margin-top: 5%;
-  margin-right: 25%;
-  margin-left: 25%;
-  padding: 20px;
   position: fixed;
-  z-index: 1;
-  left: 0;
   top: 0;
-  max-height: calc(100vh - 200px);
-  width: auto;
-  background-color: #f2f2f2;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
   overflow-y: auto;
-}
-.closeTitle {
-  margin: 30px;
-  text-align: center;
 }
 
 .card-title {
@@ -63,173 +38,55 @@ DESKTOP
   width: 100%;
   text-shadow: 1px 1px 8px #000;
 }
-.kidPictureTitle {
-  font-size: 20px;
-  text-align: center;
-}
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+.closeBtn {
+  display: none;
 }
-/*==================== 
-	END OF DESKTOP 
-======================*/
 
 /*==================== 
 	Mobile View 
 ======================*/
 @media (min-width: 360px) and (max-width: 600px) {
-  .card {
+  .closeBtn {
+    display: inline;
     border: 0;
-    height: 25rem;
-    width: auto;
-    box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
-  }
-
-  #CardImg {
-    height: 25rem;
-    object-fit: cover !important;
-  }
-
-  .modalShadow {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  .animalModal {
-    border-radius: 5px;
-    margin-top: 30%;
-    margin-right: 5%;
-    margin-left: 5%;
-    padding: 20px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    max-height: calc(100vh - 200px);
-    width: auto;
-    background-color: #f2f2f2;
-    overflow-y: auto;
-  }
-  .closeTitle {
-    margin: 30px;
-    text-align: center;
-  }
-
-  .card-title {
-    position: absolute;
-    bottom: 0px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     color: #fff;
-    text-align: center;
-    width: 100%;
-    text-shadow: 1px 1px 8px #000;
+    background-color: #54654d;
   }
 }
-/*==================== 
-	End of Mobile View
-======================*/
-
-/*====================== 
-	Mobile View Landscape
-========================*/
-@media (min-width: 481px) and (max-width: 767px) {
-}
-/*============================ 
-	End of Mobile View Landscape
-==============================*/
-
-/*==================== 
-	Small mobile View 
-======================*/
-@media (min-width: 320px) and (max-width: 600px) {
-}
-/*============================ 
-	End of Small mobile View 
-==============================*/
 
 /*==================== 
 	Tablet View 
 ======================*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  .card {
+  .closeBtn {
+    display: inline;
     border: 0;
-    height: 25rem;
-    width: auto;
-    box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
-  }
-
-  #CardImg {
-    height: 25rem;
-    object-fit: cover !important;
-  }
-
-  .modalShadow {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  .animalModal {
-    border-radius: 5px;
-    margin-top: 2%;
-    margin-right: 10%;
-    margin-left: 10%;
-    padding: 20px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    max-height: calc(100vh - 200px);
-    width: auto;
-    background-color: #f2f2f2;
-    overflow-y: auto;
-  }
-  .closeTitle {
-    margin: 30px;
-    text-align: center;
-  }
-
-  .card-title {
-    position: absolute;
-    bottom: 0px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     color: #fff;
-    text-align: center;
-    width: 100%;
-    text-shadow: 1px 1px 8px #000;
+    background-color: #54654d;
   }
 }
-/*==================== 
-	End of Tablet View  
-======================*/
-
-/*==================== 
-	Tablet View landscape
-======================*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
-/*============================ 
-	End of Tablet View landscape
-==============================*/
 
 /*==================== 
 	Non-Retina Screens
 ======================*/
 @media (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .closeBtn {
+    display: none;
+  }
 }
 
 /*==================== 
 	Retina Screens
 ======================*/
 @media (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .closeBtn {
+    display: none;
+  }
 }

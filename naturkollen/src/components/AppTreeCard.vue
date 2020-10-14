@@ -1,28 +1,37 @@
 <template>
   <div>
-
     <div class="card" v-on:click="isHidden = !isHidden">
       <img :src="tree.image" class="img-fluid" id="CardImg" />
-      <h2 class="card-title">{{tree.name}}</h2>
+      <h2 class="card-title">{{ tree.name }}</h2>
 
-      <div class="modalShadow" v-if="!isHidden">
-        <div class="treeModal">
-          <h4 style="text-align:center;">{{tree.name}}</h4>
-          <p class="card-text">{{tree.description}}</p>
-          <h5 class="closeTitle">Klicka för att stänga</h5>
+      <!-- Tree Modal  -->
+      <div class="animalModal" v-if="!isHidden">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-sm-12 col-md-12 col-xl-6">
+              <div class="imgContainer">
+                <img :src="tree.image" class="img-fluid" />
+              </div>
+              <h1 class="smallTitle">{{ tree.name }}</h1>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xl-6">
+              <div class="contentContainer">
+                <h1 class="smallTitle">Visste du att</h1>
+                <p class="text">
+                  {{ tree.description }}
+                </p>
+              </div>
+
+              <div class="centerContainer">
+                <button class="closeBtn">
+                  <span>X</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-    <!-- Fake user api -->
-    <!-- <div class="card" v-on:click="isHidden = !isHidden">
-      <img :src="tree.image" class="img-fluid" id="CardImg" />
-      <h2 class="card-title">{{user.name}}</h2>
-
-      <div class="backOfCard" v-if="!isHidden">
-        <h4 style="text-align:center;">{{user.name}}</h4>
-        <p class="card-text">{{user.description}}</p>
-      </div> -->
-
+      <!-- Modal End -->
     </div>
   </div>
 </template>
@@ -33,18 +42,18 @@ export default {
   data() {
     return {
       bodyID: {},
-      isHidden: true
+      isHidden: true,
     };
   },
   props: {
     tree: {},
-    user: {}
+    user: {},
   },
   methods: {
     /*  toggle: function() {
       this.bodyID = this.tree.id;
     } */
-  }
+  },
 };
 </script>
 
@@ -66,15 +75,15 @@ export default {
 }
 
 .modalShadow {
- position: fixed;
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .treeModal {
   border-radius: 5px;
@@ -92,7 +101,7 @@ export default {
   overflow: auto;
 }
 
-.closeTitle{
+.closeTitle {
   text-align: center;
   margin: 5%;
 }
@@ -120,36 +129,36 @@ export default {
     object-fit: cover !important;
   }
 
- .modalShadow {
- position: fixed;
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.6);
-}
-.treeModal {
-  border-radius: 5px;
-  margin-top: 20%;
-  margin-right: 5%;
-  margin-left: 5%;
-  padding: 20px;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: auto;
-  height: 500px;
-  background-color: #f2f2f2;
-  overflow: auto;
-}
-.closeTitle{
-  text-align: center;
-  margin: 5%;
-}
+  .modalShadow {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .treeModal {
+    border-radius: 5px;
+    margin-top: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 500px;
+    background-color: #f2f2f2;
+    overflow: auto;
+  }
+  .closeTitle {
+    text-align: center;
+    margin: 5%;
+  }
 
   .card-title {
     position: absolute;
@@ -175,31 +184,31 @@ export default {
   }
 
   .modalShadow {
- position: fixed;
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.6);
-}
-.treeModal {
-  border-radius: 5px;
-  margin-top: 40%;
-  margin-right: 5%;
-  margin-left: 5%;
-  padding: 20px;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: auto;
-  height: auto;
-  background-color: #f2f2f2;
-  overflow: auto;
-}
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .treeModal {
+    border-radius: 5px;
+    margin-top: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    background-color: #f2f2f2;
+    overflow: auto;
+  }
 
   .card-title {
     position: absolute;

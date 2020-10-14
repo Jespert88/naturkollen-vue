@@ -14,7 +14,7 @@
               </div>
               <div class="col-sm-12 col-md-6 col-xl-6">
                 <div style="padding: 5%">
-                  <h1 class="smallTitle">Om naturkollen</h1>
+                  <h1 class="whiteSmallTitle">Om naturkollen</h1>
                   <p class="whiteText">{{ info }}</p>
                 </div>
               </div>
@@ -43,5 +43,5 @@ export default {
 
 <style>
 @import "../assets/css/pages/About.css";
-@import "../assets/css/pages/pageGlobalStyles.css";
+@import "../assets/css/globalStyles.css";
 </style>

@@ -147,4 +147,5 @@ export default {
 
 <style>
 @import "../assets/css/pages/Trees.css";
+@import "../assets/css/globalStyles.css";
 </style>

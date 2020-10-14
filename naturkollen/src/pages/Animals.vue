@@ -297,5 +297,5 @@ export default {
 
 <style>
 @import "../assets/css/pages/Animal.css";
-@import "../assets/css/pages/pageGlobalStyles.css";
+@import "../assets/css/globalStyles.css";
 </style>

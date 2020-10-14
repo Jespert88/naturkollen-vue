@@ -6,7 +6,7 @@
         <div class="col-sm-12 col-md-10 col-xl-6">
           <div class="centerContainer">
             <div class="welcomeDiv">
-              <h1 class="welcomeTitle">Välkommen till naturkollen</h1>
+              <h1 class="whiteTitle">Välkommen till naturkollen</h1>
               <p class="whiteText">{{ info }}</p>
             </div>
           </div>
@@ -32,5 +32,5 @@ export default {
 </script>
 <style>
 @import "../assets/css/pages/index.css";
-@import "../assets/css/pages/pageGlobalStyles.css";
+@import "../assets/css/globalStyles.css";
 </style>

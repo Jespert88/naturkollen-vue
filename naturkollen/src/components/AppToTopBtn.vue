@@ -18,4 +18,5 @@ export default {
 
 <style>
 @import "../assets/css/components/AppToTopBtn.css";
+@import "../assets/css/globalStyles.css";
 </style>
