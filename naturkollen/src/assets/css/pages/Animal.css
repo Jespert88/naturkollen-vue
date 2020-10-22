@@ -2,7 +2,8 @@
 #animalPageTitle {
   text-align: center;
   margin-top: 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 /* Mobile */
@@ -11,7 +12,8 @@
     text-align: center;
     margin-top: 10%;
     font-size: 25px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   }
 }
 
@@ -21,6 +23,7 @@
     text-align: center;
     margin-top: 10%;
     font-size: 30px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   }
 }
